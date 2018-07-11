@@ -49,12 +49,12 @@ $.fn.pcodedmenu = function( settings ) {
 				phone : "overlay",
 			},
 			defaultVerticalMenu: {
-				desktop : "expanded",		// value should be offcanvas/collapsed/expanded/compact/compact-acc/fullpage/ex-popover/sub-expanded
+				desktop : "collapsed",		// value should be offcanvas/collapsed/expanded/compact/compact-acc/fullpage/ex-popover/sub-expanded
 				tablet : "collapsed",		// value should be offcanvas/collapsed/expanded/compact
 				phone : "offcanvas",		// value should be offcanvas/collapsed/expanded/compact
 			},
 			onToggleVerticalMenu : {
-				desktop : "collapsed",		// value should be offcanvas/collapsed/expanded/compact
+				desktop : "expand",		// value should be offcanvas/collapsed/expanded/compact
 				tablet : "expanded",		// value should be offcanvas/collapsed/expanded/compact
 				phone : "expanded",			// value should be offcanvas/collapsed/expanded/compact
 			},

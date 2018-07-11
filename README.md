@@ -1,2 +1,2 @@
 # rBUI
-rPi Backup User Interface (rBUI)
+rPi BackUp Interface (rBUI)
