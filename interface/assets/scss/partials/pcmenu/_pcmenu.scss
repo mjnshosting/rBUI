@@ -3118,7 +3118,7 @@ body {
             @each $value in $left-navbar-light-theme {
                 $i: index($left-navbar-light-theme, $value);
                 &[data-navbar-theme="themelight#{$i}"]{
-                    background-color:#23282D;
+                    background-color:#328fbb;
                 }
             }
         }

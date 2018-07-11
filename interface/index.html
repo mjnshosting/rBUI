@@ -53,7 +53,7 @@
                             <i class="ti-menu"></i>
                         </a>
                         <a href="index.html">
-                            <img class="img-fluid" src="assets/images/rBUI-logo.png" alt="MJNS rBUI" />
+                            <img class="img-fluid" src="assets/images/rBUI-logo.png" alt="MJNS rBUI"  width="60%" height="60%" />
                         </a>
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -75,13 +75,18 @@
                                 <li class="header-notification">
                                     <a href="#!">
                                         <i class="ti-bell"></i>
-                                        <span class="badge">5</span>
+                                        <span class="badge">
+						<div id="notification-count">5</div>
+					</span>
                                     </a>
                                     <ul class="show-notification">
                                         <li>
                                             <h6>Notifications</h6>
                                             <label class="label label-danger">New</label>
                                         </li>
+
+				<!-- Start Notifications -->
+
                                         <li>
                                             <div class="media">
                                                 <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
@@ -112,12 +117,17 @@
                                                 </div>
                                             </div>
                                         </li>
+
+				<!-- End Notifications -->
+
                                     </ul>
                                 </li>
                                 <li class="header-notification">
                                     <a href="#!" class="displayChatbox">
-                                        <i class="ti-comments"></i>
-                                        <span class="badge">9</span>
+                                        <i class="ti-alert"></i>
+                                        <span class="badge">
+						<div id="alert-count">9</div>
+					</span>
                                     </a>
                                 </li>
                                 <li class="user-profile header-notification">
@@ -168,13 +178,13 @@
                         <div class="user-box">
                             <div class="card-block">
                                 <div class="right-icon-control">
-                                    <input type="text" class="form-control  search-text" placeholder="Search Friend" id="search-friends">
-                                    <div class="form-icon">
-                                        <i class="icofont icofont-search"></i>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="main-friend-list">
+                            
+			    <div class="main-friend-list">
+
+		<!-- Start Notification List -->
+
                                 <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
                                     <a class="media-left" href="#!">
                                         <img class="media-object img-circle" src="assets/images/avatar-1.png" alt="Generic placeholder image">
@@ -310,13 +320,17 @@
                                         <div class="f-13 chat-header">Lary</div>
                                     </div>
                                 </div>
+
+			<!-- End Notification List -->
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Sidebar inner chat start-->
+	<!-- Sidebar inner chat start-->
+
             <div class="showChat_inner">
                 <div class="media chat-inner-header">
                     <a class="back_chatBox">
@@ -356,7 +370,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Sidebar inner chat end-->
+
+	<!-- Sidebar inner chat end-->
 
 
             <div class="pcoded-main-container">
