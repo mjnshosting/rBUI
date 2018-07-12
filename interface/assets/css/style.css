@@ -19246,4 +19246,12 @@ body.menu-bottom .navbar-wrapper {
 .mCustomScrollBox {
   overflow: visible !important; }
 
+.alert_Box {
+  margin: 0 auto;
+  font-weight: 600; }
+  .alert_Box i {
+    margin-top: 5px;
+    left: 20px;
+    cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */
