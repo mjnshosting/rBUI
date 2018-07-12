@@ -19248,10 +19248,14 @@ body.menu-bottom .navbar-wrapper {
 
 .alert_Box {
   margin: 0 auto;
-  font-weight: 600; }
-  .alert_Box i {
+  font-weight: 600; 
+  padding-bottom: 40px;
+}  
+
+.alert_Box i {
     margin-top: 5px;
     left: 20px;
-    cursor: pointer; }
+    cursor: pointer; 
+}
 
 /*# sourceMappingURL=style.css.map */

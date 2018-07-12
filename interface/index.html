@@ -485,12 +485,12 @@
                                         <div class="row">
                                             <!-- Documents card start -->
                                             <div class="col-md-6 col-xl-3">
-                                                <div class="card client-blocks dark-primary-border">
+                                                <div class="card client-blocks text-target">
                                                     <div class="card-block">
-                                                        <h5>New Documents</h5>
+                                                        <h5>Targets:</h5>
                                                         <ul>
                                                             <li>
-                                                                <i class="icofont icofont-document-folder"></i>
+                                                                <i class="icofont icofont-ui-folder"></i>
                                                             </li>
                                                             <li class="text-right">
                                                                 133
@@ -502,14 +502,14 @@
                                             <!-- Documents card end -->
                                             <!-- New clients card start -->
                                             <div class="col-md-6 col-xl-3">
-                                                <div class="card client-blocks warning-border">
+                                                <div class="card client-blocks text-files">
                                                     <div class="card-block">
-                                                        <h5>New Clients</h5>
+                                                        <h5>Total File Count:</h5>
                                                         <ul>
                                                             <li>
-                                                                <i class="icofont icofont-ui-user-group text-warning"></i>
+                                                                <i class="icofont icofont-file-alt text-files"></i>
                                                             </li>
-                                                            <li class="text-right text-warning">
+                                                            <li class="text-right text-files">
                                                                 23
                                                             </li>
                                                         </ul>
@@ -519,14 +519,14 @@
                                             <!-- New clients card end -->
                                             <!-- New files card start -->
                                             <div class="col-md-6 col-xl-3">
-                                                <div class="card client-blocks success-border">
+                                                <div class="card client-blocks text-usage">
                                                     <div class="card-block">
-                                                        <h5>New Files</h5>
+                                                        <h5>Total Storage Used:</h5>
                                                         <ul>
                                                             <li>
-                                                                <i class="icofont icofont-files text-success"></i>
+                                                                <i class="icofont icofont-pie-chart text-usage"></i>
                                                             </li>
-                                                            <li class="text-right text-success">
+                                                            <li class="text-right text-usage">
                                                                 240
                                                             </li>
                                                         </ul>
@@ -536,14 +536,14 @@
                                             <!-- New files card end -->
                                             <!-- Open Project card start -->
                                             <div class="col-md-6 col-xl-3">
-                                                <div class="card client-blocks">
+                                                <div class="card client-blocks text-duration">
                                                     <div class="card-block">
-                                                        <h5>Open Projects</h5>
+                                                        <h5>Last Backup Duration:</h5>
                                                         <ul>
                                                             <li>
-                                                                <i class="icofont icofont-ui-folder text-primary"></i>
+                                                                <i class="icofont icofont-clock-time text-duration"></i>
                                                             </li>
-                                                            <li class="text-right text-primary">
+                                                            <li class="text-right text-duration">
                                                                 169
                                                             </li>
                                                         </ul>
@@ -555,12 +555,21 @@
                                             <!-- Morris chart start -->
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card">
-                                                    <div class="card-header">
-                                                        <button class="btn btn-primary btn-sm">Week</button>
-                                                        <button class="btn btn-primary btn-sm">Month</button>
-                                                        <button class="btn btn-primary btn-sm">Year</button>
+                                                    <div class="card-header success-border">
+	    					        <h5>Historical Data:</h5></br>
+                                                        <button class="btn btn-info btn-sm">Week</button>
+                                                        <button class="btn btn-info btn-sm">Month</button>
+                                                        <button class="btn btn-info btn-sm">Year</button>
+                                                        <button class="btn btn-info btn-sm">All</button>
+							    <div class="card-header-right">
+        	                                                <i class="icofont icofont-rounded-down"></i>
+                	                                        <i class="icofont icofont-refresh"></i>
+                        	                                <i class="icofont icofont-close-circled"></i>
+                                	                    </div>
                                                     </div>
-                                                    <div class="card-block">
+                                                    
+
+						<div class="card-block">
                                                         <div id="morris-extra-area" style="height:470px;"></div>
                                                     </div>
                                                 </div>

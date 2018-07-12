@@ -4,60 +4,60 @@ $(document).ready(function() {
     Morris.Area({
         element: 'morris-extra-area',
         data: [{
-                period: '2010',
-                iphone: 0,
-                ipad: 0,
-                itouch: 0,
-                android: 0
+                period: '1999',
+                targets: 0,
+                files: 0,
+                used: 0,
+                duration: 0
             }, {
                 period: '2011',
-                iphone: 50,
-                ipad: 15,
-                itouch: 5,
-                android: 11
+                targets: 50,
+                files: 15,
+                used: 5,
+                duration: 11
             }, {
                 period: '2012',
-                iphone: 20,
-                ipad: 50,
-                itouch: 65,
-                android: 67
+                targets: 20,
+                files: 50,
+                used: 65,
+                duration: 67
             }, {
                 period: '2013',
-                iphone: 60,
-                ipad: 12,
-                itouch: 7,
-                android: 20
+                targets: 60,
+                files: 12,
+                used: 7,
+                duration: 20
             }, {
                 period: '2014',
-                iphone: 30,
-                ipad: 20,
-                itouch: 120,
-                android: 89
+                targets: 30,
+                files: 20,
+                used: 120,
+                duration: 89
             }, {
                 period: '2015',
-                iphone: 250,
-                ipad: 80,
-                itouch: 40,
-                android: 76
+                targets: 250,
+                files: 80,
+                used: 40,
+                duration: 76
             }, {
                 period: '2016',
-                iphone: 100,
-                ipad: 10,
-                itouch: 10,
-                android: 46
+                targets: 100,
+                files: 10,
+                used: 10,
+                duration: 46
             }, {
                 period: '2017',
-                iphone: 10,
-                ipad: 10,
-                itouch: 40,
-                android: 100
+                targets: 10,
+                files: 10,
+                used: 40,
+                duration: 100
             }
 
         ],
         lineColors: ['#fb9678', '#7E81CB', '#01C0C8', '#c57ecb'],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch', 'android'],
-        labels: ['Site A', 'Site B', 'Site C', 'android'],
+        ykeys: ['targets', 'files', 'used', 'duration'],
+        labels: ['Targets', 'Files', 'Used', 'Duration'],
         pointSize: 2,
         lineWidth: 0,
         resize: true,

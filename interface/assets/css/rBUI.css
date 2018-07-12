@@ -26,3 +26,30 @@
  }
 }
 
+.text-target {
+  color: #fb9678 !important; 
+  border-top-color: #fb9678; 
+}
+
+.text-files {
+  color: #7E81CB !important; 
+  border-top-color: #7E81CB; 
+}
+
+.text-usage {
+  color: #01C0C8 !important; 
+  border-top-color: #01C0C8; 
+}
+
+.text-duration {
+  color: #c57ecb !important; 
+  border-top-color: #c57ecb; 
+}
+
+.morris-hover {
+  top: -20px !important;
+}
+
+.btn-sm {
+  line-height: 5px;
+}
