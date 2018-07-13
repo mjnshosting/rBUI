@@ -12,14 +12,6 @@ $(document).ready(function() {
     // card js start
     var emailbody = $(window).height();
     $('.user-body').css('min-height', emailbody);
-    $(".card-header-right .icofont-close-circled").on('click', function() {
-        var $this = $(this);
-// MUST CHANGE TO MATCH ALL or be dynamic
-	document.getElementById("hide-dest-entry").style.display="none";
-//        setTimeout(function() {
-//            $this.parents('.card').remove();
-//        }, 800);
-    });
     $("#styleSelector .style-cont").slimScroll({
         height: '100%',
         allowPageScroll: false,
