@@ -408,14 +408,14 @@
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class="">
-                                            <a href="#!">
+                                            <a href="#!" onclick="showdest()">
                                                 <span class="pcoded-micon"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.dash.destination">Destination</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a href="#!">
+                                            <a href="#!" onclick="showtarget()">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.dash.target">Target</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -536,14 +536,14 @@
                                             <!-- Open Project card end -->
 
 					    <!-- Destination Entry start -->
-					<div class="col"></div>
+					<div class="col" id="dest-entry"></div>
                                             <div class="col-md-12 col-xl-6">
                                                 <div class="card" id="hide-dest-entry">
                                                     <div class="card-header">
                                                         <h5>Destination Entry:</h5>
                                                     <div class="card-header-right">
                                                         <i class="icofont icofont-refresh"></i>
-                                                        <i class="icofont icofont-close-circled"></i>
+                                                        <i class="hide icofont icofont-close-circled"></i>
                                                     </div>
 
                                                     </div>
@@ -588,13 +588,13 @@
 
 					    
 					    <!-- Basic Inputs Validation start -->
-<div class="col-sm-12">
+<div class="col-sm-12" id="target-entry">
 					    <div class="card" id="hide-target-entry">
                                                 <div class="card-header">
                                                     <h5>Target Entry:</h5>
                                                     <div class="card-header-right">
                                                         <i class="icofont icofont-rounded-down"></i>
-                                                        <i class="icofont icofont-close-circled"></i>
+                                                        <i class="hide icofont icofont-close-circled"></i>
                                                     </div>
                                                 </div>
                                                 <div class="card-block">
