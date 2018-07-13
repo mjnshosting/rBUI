@@ -53,3 +53,7 @@
 .btn-sm {
   line-height: 5px;
 }
+
+.checkbox-fade-custom label {
+    line-height: 39px;
+}
