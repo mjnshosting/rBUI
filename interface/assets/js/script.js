@@ -12,20 +12,13 @@ $(document).ready(function() {
     // card js start
     var emailbody = $(window).height();
     $('.user-body').css('min-height', emailbody);
-//    $(".card-header-right .icofont-close-circled").on('click', function() {
-//        var $this = $(this);
-//        $this.parents('.card').animate({
-//            'opacity': '0',
-//            '-webkit-transform': 'scale3d(.3, .3, .3)',
-//            'transform': 'scale3d(.3, .3, .3)'
-//        });
-//	document.getElementById("hide-dest-entry").style.display="none";
+    $(".card-header-right .icofont-close-circled").on('click', function() {
+        var $this = $(this);
+// MUST CHANGE TO MATCH ALL or be dynamic
+	document.getElementById("hide-dest-entry").style.display="none";
 //        setTimeout(function() {
 //            $this.parents('.card').remove();
 //        }, 800);
-//    });
-    $(".hide .card-header-right .icofont-close-circled").on('click', function() {
-	document.getElementById("hide-dest-entry").style.display="none";
     });
     $("#styleSelector .style-cont").slimScroll({
         height: '100%',

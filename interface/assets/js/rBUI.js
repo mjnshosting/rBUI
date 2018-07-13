@@ -2,6 +2,7 @@ function showdest()
 {
         document.getElementById("hide-dest-entry").style.display="block";
         window.location.href="#dest-entry";
+//window.scrollTo(x-coord, y-coord);
 }
 
 function showtarget()
