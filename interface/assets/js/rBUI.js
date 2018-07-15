@@ -39,21 +39,21 @@ $(document).ready(function(){
       var i = 7;
       $("#add-btn").on("click", function() {
           $(".md-form-control").removeClass("md-valid");
-          var task = $('.add_destination').val();
-          if (task == "") {
+          var destination = $('.add_dest_field').val();
+          if (destination == "") {
               alert("Please enter a Destination");
           } else {
-              var add_destination = $('<div class="destination-list" id="' + i + '"><div class="checkbox-fade fade-in-primary"><span>' + task + '</span><div class="f-right"><a href="#!" class="delete_destination"><i class="icofont icofont-ui-delete"></i></a></div><div class="f-right"><a href="#!" class="edit_destination"><i class="icofont icofont-pencil-alt-5" ></i></a></div></div>');
+              var add_dest = $('<div class="destination-list"><div class="checkbox-fade fade-in-primary"><span> ' + destination + '</span></div><div class="f-right"><a href="#!" class="delete_destination"><i class="icofont icofont-ui-delete"></i></a></div><div class="f-right"><a href="#!" class="edit_destination"><i class="icofont icofont-pencil-alt-5"></i></a></div></div>');
               i++;
-              $(add_destination).appendTo(".new-destination").hide().fadeIn(300);
-              $('.add_destination').val('');
+              $(add_dest).appendTo(".new-destination").hide().fadeIn(300);
+              $('.add_dest_field').val('');
           }
       });
 
-      $(".delete_todolist").on("click", function() {
-
-
+      $(".delete_destination").on("click", function() {
           $(this).parent().parent().fadeOut();
+
+
       });
 
 });

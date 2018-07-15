@@ -57,3 +57,37 @@
 .checkbox-fade-custom label {
     line-height: 39px;
 }
+
+.card-block .new-destination .fade-in-primary .cr {
+  border: 2px solid #ccc;
+  margin-top: 12px;
+  margin-right: 20px; }
+
+  .card-block .new-destination .fade-in-primary .subject {
+  display: block;
+  margin-left: 35px;
+  margin-bottom: 16px; }
+.card-block .new-destination .fade-in-primary .check-task p {
+  display: block;
+  margin-left: 35px; }
+.task-list-to-do .card-block .new-destination .fade-in-primary span.cr {
+  margin-top: 0; }
+
+  .destination-list {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px; }
+  .destination-list i {
+    color: #ccc;
+    font-size: 24px;
+    opacity: 0; }
+  .destination-list:last-child {
+    border: none;
+    padding: 0;
+    margin: 0; }
+  .destination-list:hover i {
+    opacity: 1;
+    transition: opacity ease-in 0.3s; }
+  .destination-list p {
+    display: inline-block; }
+
