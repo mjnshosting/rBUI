@@ -10,6 +10,20 @@ function showtarget()
         window.location.href="#target-entry";
 }
 
+function showedittime()
+{
+	var x = document.getElementById("edit-time-div");
+	if (x.style.display === "none") {
+        	x.style.display = "block";
+		document.getElementById("edit-time-div").innerHTML = "<label class='col-sm-4 col-form-label'>Select Time: </label><input type='time' id='setting-time' name='setting-time' required />";
+		document.getElementById("show-edit-time").innerHTML = "Close";
+	} else {
+        	x.style.display = "none";
+		document.getElementById("edit-time-div").innerHTML = " ";
+		document.getElementById("show-edit-time").innerHTML = "Edit";
+	}
+}
+
 function hidedest()
 {
         document.getElementById("hide-dest-entry").style.display="none";
@@ -21,19 +35,6 @@ function hidetarget()
         document.getElementById("hide-target-entry").style.display="none";
         window.location.href="#target-entry";
 }
-
-$( "#show-edit-time" ).click(function() {
-	var x = document.getElementById("edit-time-div");
-	if (x.style.display === "none") {
-        	x.style.display = "block";
-		document.getElementById("edit-time-div").innerHTML = "<label class='col-sm-4 col-form-label'>Select Time: </label><input type='time' id='setting-time' name='setting-time' required />";
-		document.getElementById("show-edit-time").innerHTML = "Close";
-	} else {
-        	x.style.display = "none";
-		document.getElementById("edit-time-div").innerHTML = " ";
-		document.getElementById("show-edit-time").innerHTML = "Edit";
-	}
-});
 
 $(".card-header-right .icofont-close-circled").on('click', function() {
 	var $this = $(this);
