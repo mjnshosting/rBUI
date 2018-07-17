@@ -10,7 +10,7 @@ function generateRandomString($length = 5) {
     return $randomString;
 }
 
-echo generateRandomString(); 
-
+//Make a randomly named PHP scripts directorye
+mkdir("../interface/" . generateRandomString(), 0755);
 
 ?>

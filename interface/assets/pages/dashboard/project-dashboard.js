@@ -1,56 +1,154 @@
 $(document).ready(function() {
 
-    // Extra chart
     Morris.Area({
         element: 'morris-extra-area',
-        data: [{
+        data: [
+{
+                period: '2000',
+                targets: '82',
+                files: '100',
+                usage: '97',
+                duration: '9',
+            },
+{
+                period: '2001',
+                targets: '14',
+                files: '4',
+                usage: '28',
+                duration: '30',
+            },
+{
+                period: '2002',
+                targets: '27',
+                files: '42',
+                usage: '86',
+                duration: '25',
+            },
+{
+                period: '2003',
+                targets: '92',
+                files: '86',
+                usage: '85',
+                duration: '13',
+            },
+{
+                period: '2004',
+                targets: '52',
+                files: '74',
+                usage: '23',
+                duration: '86',
+            },
+{
+                period: '2005',
+                targets: '16',
+                files: '89',
+                usage: '23',
+                duration: '15',
+            },
+{
+                period: '2006',
+                targets: '79',
+                files: '94',
+                usage: '18',
+                duration: '14',
+            },
+{
+                period: '2007',
+                targets: '42',
+                files: '10',
+                usage: '27',
+                duration: '24',
+            },
+{
+                period: '2008',
+                targets: '9',
+                files: '24',
+                usage: '33',
+                duration: '24',
+            },
+{
                 period: '2009',
-                targets: 0,
-                files: 0,
-                usage: 0,
-                duration: 0
-            }, {
+                targets: '29',
+                files: '61',
+                usage: '55',
+                duration: '57',
+            },
+{
+                period: '2010',
+                targets: '2',
+                files: '40',
+                usage: '83',
+                duration: '94',
+            },
+{
                 period: '2011',
-                targets: 50,
-                files: 15,
-                usage: 5,
-                duration: 11
-            }, {
+                targets: '25',
+                files: '67',
+                usage: '7',
+                duration: '78',
+            },
+{
                 period: '2012',
-                targets: 20,
-                files: 50,
-                usage: 65,
-                duration: 67
-            }, {
+                targets: '40',
+                files: '30',
+                usage: '64',
+                duration: '56',
+            },
+{
                 period: '2013',
-                targets: 60,
-                files: 12,
-                usage: 7,
-                duration: 20
-            }, {
+                targets: '19',
+                files: '88',
+                usage: '72',
+                duration: '99',
+            },
+{
                 period: '2014',
-                targets: 30,
-                files: 20,
-                usage: 120,
-                duration: 89
-            }, {
+                targets: '81',
+                files: '90',
+                usage: '12',
+                duration: '23',
+            },
+{
                 period: '2015',
-                targets: 250,
-                files: 80,
-                usage: 40,
-                duration: 76
-            }, {
+                targets: '0',
+                files: '39',
+                usage: '48',
+                duration: '9',
+            },
+{
                 period: '2016',
-                targets: 100,
-                files: 10,
-                usage: 10,
-                duration: 46
-            }, {
+                targets: '64',
+                files: '81',
+                usage: '34',
+                duration: '93',
+            },
+{
                 period: '2017',
-                targets: 10,
-                files: 10,
-                usage: 40,
-                duration: 100
+                targets: '42',
+                files: '89',
+                usage: '49',
+                duration: '44',
+            },
+{
+                period: '2018',
+                targets: '28',
+                files: '31',
+                usage: '38',
+                duration: '54',
+            },
+{
+                period: '2019',
+                targets: '98',
+                files: '46',
+                usage: '32',
+                duration: '38',
+            },
+{
+                period: '2020',
+                targets: '76',
+                files: '96',
+                usage: '95',
+                duration: '96',
             }
 
         ],
@@ -59,12 +157,10 @@ $(document).ready(function() {
         ykeys: ['targets', 'files', 'usage', 'duration'],
         labels: ['Targets', 'Files', 'Usage', 'Duration'],
         pointSize: 2,
-        lineWidth: 0,
-        resize: true,
+        lineWidth: 2.5,resize: true,
         fillOpacity: 0.5,
         behaveLikeLine: true,
         gridLineColor: '#5FBEAA',
         hideHover: 'auto'
-
     });
 });

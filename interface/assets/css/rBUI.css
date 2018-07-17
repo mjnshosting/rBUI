@@ -90,3 +90,8 @@
     transition: opacity ease-in 0.3s; }
   .destination-list p {
     display: inline-block; }
+
+.btn-rounded-rbui {
+    border-radius: 25px !important;
+/*    border: 3px solid transparent !important;*/
+}
