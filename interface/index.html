@@ -461,9 +461,7 @@
                                                             <li>
                                                                 <i class="icofont icofont-ui-folder"></i>
                                                             </li>
-                                                            <li class="text-right">
-                                                                133
-                                                            </li>
+                                                            <li class="text-right counter-value" data-count="70"></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -478,9 +476,7 @@
                                                             <li>
                                                                 <i class="icofont icofont-file-alt text-files"></i>
                                                             </li>
-                                                            <li class="text-right text-files">
-                                                                23
-                                                            </li>
+                                                            <li class="text-right text-files counter-value" data-count="2300"></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -495,9 +491,7 @@
                                                             <li>
                                                                 <i class="icofont icofont-pie-chart text-usage"></i>
                                                             </li>
-                                                            <li class="text-right text-usage">
-                                                                240
-                                                            </li>
+                                                            <li class="text-right text-usage counter-value" data-count="169736"></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -512,9 +506,7 @@
                                                             <li>
                                                                 <i class="icofont icofont-clock-time text-duration"></i>
                                                             </li>
-                                                            <li class="text-right text-duration">
-                                                                169
-                                                            </li>
+                                                            <li class="text-right text-duration counter-value" data-count="123"></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -525,7 +517,7 @@
 					    <!-- Destination Entry start -->
 					<div class="col"></div>
                                             <div class="col-md-12 col-xl-6">
-                                                <div class="card" id="hide-dest-entry">
+                                                <div class="card" id="hide-dest-entry" style="display: none;">
                                                     <div class="card-header">
                                                         <h5>Destination Entry:</h5>
                                                     <div class="card-header-right">
@@ -574,7 +566,7 @@
 					    
 					    <!-- Basic Inputs Validation start -->
 <div class="col-sm-12">
-					    <div class="card" id="hide-target-entry">
+					    <div class="card" id="hide-target-entry" style="display: none;">
                                                 <div class="card-header">
                                                     <h5>Target Entry:</h5>
                                                     <div class="card-header-right">
@@ -584,29 +576,45 @@
                                                 <div class="card-block">
                                                     <form id="main" method="post" action="/" novalidate="">
                                                         <div class="form-group row">
+                                                            <label class="col-sm-2 col-form-label">Target Name</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" name="target-name" id="target-name" placeholder="rBUI Target Name">
+                                                                <span class="messages"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
                                                             <label class="col-sm-2 col-form-label">Target Server</label>
                                                             <div class="col-sm-10">
                                                                 <input type="text" class="form-control" name="server-name" id="server-name" placeholder="Server IP or FQDN">
                                                                 <span class="messages"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Target Directory</label>
+                                                        <div class="row">
+                                                            <label class="col-sm-2 col-form-label">Target Type</label>
                                                             <div class="col-sm-10">
-                                                                <input type="text" class="form-control" id="server-directory" name="server-directory" placeholder="Full Path D:\Data | /home/user">
-                                                                <span class="messages">Defaults to master destination. See settings.</span>
+                                                                <div class="form-check form-check-inline">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="radio" name="target-type" id="windows" value="windows"> Windows Server
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="radio" name="target-type" id="linux" value="linux"> Linux Server
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <label class="form-check-label">
+                                                                        <input class="form-check-input" type="radio" name="target-type" id="network" value="network"> Network Device
+                                                                    </label>
+                                                                </div>
+                                                                <span class="messages"></span>
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Target Access Method</label>
+                                                            <label class="col-sm-2 col-form-label">Target Directory</label>
                                                             <div class="col-sm-10">
-
-							    <select name="select" class="form-control">
-                                                                <option value="opt1">SMB</option>
-                                                                <option value="opt2">Rsync</option>
-                                                            </select>
-
-                                                                <span class="messages"></span>
+                                                                <input type="text" class="form-control" id="server-directory" name="server-directory" placeholder="Full Path \\fileserver\data | /home/user">
+                                                                <span class="messages">Defaults to master destination. See settings.</span>
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
@@ -624,7 +632,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Destinaion</label>
+                                                            <label class="col-sm-2 col-form-label">Destination</label>
                                                             <div class="col-sm-10">
 							    
 							    <select name="select" class="form-control">
@@ -638,7 +646,7 @@
                                                         <div class="form-group row">
                                                             <label class="col-sm-2 col-form-label">Password</label>
                                                             <div class="col-sm-10">
-                                                                <input type="password" class="form-control" id="password" name="password" placeholder="Password input">
+                                                                <input type="password" class="form-control" id="password" name="password" placeholder="Password Input">
                                                                 <span class="messages"></span>
                                                             </div>
                                                         </div>
@@ -653,8 +661,6 @@
                                                         <div class="row">
                                                             <label class="col-sm-2 col-form-label">Status</label>
                                                             <div class="col-sm-10">
-<input type="checkbox" class="js-dynamic-state" checked="" data-switchery="true" style="display: none;">
-<span class="switchery switchery-default" style="background-color: rgb(26, 188, 156); border-color: rgb(26, 188, 156); box-shadow: rgb(26, 188, 156) 0px 0px 0px 16px inset; transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;"><small style="left: 20px; transition: background-color 0.4s, left 0.2s; background-color: rgb(255, 255, 255);"></small></span>
                                                                 <div class="form-check form-check-inline">
                                                                     <label class="form-check-label">
                                                                         <input class="form-check-input" type="radio" name="gender" id="gender-1" value="option1"> Enable
@@ -668,6 +674,10 @@
                                                                 <span class="messages"></span>
                                                             </div>
                                                         </div>
+
+
+
+
                                                         <div class="form-group row">
                                                             <label class="col-sm-2"></label>
                                                             <div class="col-sm-10">
@@ -685,13 +695,14 @@
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card">
                                                     <div class="card-header success-border">
-	    					        <h5>Historical Data:</h5></br>
-                                                        <button class="btn btn-info btn-sm">Week</button>
-                                                        <button class="btn btn-info btn-sm">Month</button>
-                                                        <button class="btn btn-info btn-sm">Year</button>
-                                                        <button class="btn btn-info btn-sm">All</button>
+	    					        <h5>Historical Data:</h5>
+							<br class="hidden-br"/>
+                                                        <button class="btn btn-info btn-sm" onclick="getMorrisRange(2040);">Week</button>
+                                                        <button class="btn btn-info btn-sm" onclick="getMorrisRange(2050);">Month</button>
+                                                        <button class="btn btn-info btn-sm" onclick="getMorrisRange(2060);">Year</button>
+                                                        <button class="btn btn-info btn-sm" onclick="getMorrisRange();">All</button>
 							    <div class="card-header-right">
-                	                                        <a href="#!" onclick="getMorris();"><i class="icofont icofont-refresh"></i></a>
+                	                                        <a href="#!" onclick="getMorrisRange();"><i class="icofont icofont-refresh"></i></a>
                                 	                    </div>
                                                     </div>
                                                     
@@ -707,6 +718,11 @@
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h5>Target List:</h5>
+							<br class="hidden-br"/>
+                                                        <button class="btn btn-info btn-sm">Windows</button>
+                                                        <button class="btn btn-info btn-sm">Linux</button>
+                                                        <button class="btn btn-info btn-sm">Network</button>
+                                                        <button class="btn btn-info btn-sm">All</button>
                                                     <div class="card-header-right">
                                                         <i class="icofont icofont-refresh"></i>
                                                     </div>
@@ -718,30 +734,17 @@
                                                                 <div class="card user-card">
                                                                     <div class="card-block">
                                                                         <div class="media">
-                                                                            <a class="media-left" href="#">
-                                                                                <img class="media-object img-circle card-list-img" src="assets/images/avatar-1.png" alt="Generic placeholder image">
-                                                                            </a>
+                                                                                <img class="media-object img-circle card-list-img" src="assets/images/win-logo.png" alt="Generic placeholder image">
                                                                             <div class="media-body">
                                                                                 <div class="col-xs-12">
-                                                                                    <h6 class="d-inline-block">Heading</h6>
-                                                                                    <label class="label label-info">Agent</label>
+                                                                                    <h6 class="d-inline-block">DC01</h6>
+											</br>
+                                                                                    <label class="label label-info">Windows Server</label>
                                                                                 </div>
-                                                                                <div class="f-13 text-muted m-b-15">Software Engineer</div>
-                                                                                <p>Hi, This is my short intro text. Lorem ipsum is a dummy content sit dollar. You can copy and paste this dummy content from anywhere and to anywhere. Its all free and must be a good to folllow
-                                                                                    in prectice</p>
                                                                                     <div class="m-t-15">
-                                                                                        <button type="button" class="btn btn-facebook btn-mini waves-effect waves-light">
-                                                                                            <span class="icofont icofont-social-facebook"></span>
-                                                                                        </button>
-                                                                                        <button type="button" class="btn btn-twitter btn-mini waves-effect waves-light">
-                                                                                            <span class="icofont icofont-social-twitter"></span>
-                                                                                        </button>
-                                                                                        <button type="button" class="btn btn-linkedin btn-mini waves-effect waves-light">
-                                                                                            <span class="icofont icofont-brand-linkedin"></span>
-                                                                                        </button>
-                                                                                        <button type="button" class="btn btn-dribbble btn-mini waves-effect waves-light">
-                                                                                            <span class="icofont icofont-social-dribble"></span>
-                                                                                        </button>
+											<i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
+											<i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
+											<i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -753,32 +756,19 @@
                                                                         <div class="card-block">
                                                                             <div class="row">
                                                                                 <div class="media">
-                                                                                    <a class="media-left" href="#!">
-                                                                                        <img class="media-object img-circle card-list-img" src="assets/images/avatar-2.png" alt="Generic placeholder image">
-                                                                                    </a>
+                                                                                        <img class="media-object img-circle card-list-img" src="assets/images/lin-logo.png" alt="Generic placeholder image">
                                                                                 </div>
                                                                                 <div class="media-body">
                                                                                     <div class="col-xl-12">
                                                                                         <div>
-                                                                                            <h6 class="d-inline-block">Heading</h6>
-                                                                                            <label class="label label-info">Sales Man</label>
-                                                                                        </div>
-                                                                                        <div class="f-13 text-muted m-b-15">Softwear Engineer</div>
-                                                                                        <p>Hi, This is my short intro text. Lorem ipsum is a dummy content sit dollar. You can copy and paste this dummy content from anywhere and to anywhere. Its all free and must be a good to folllow
-                                                                                            in prectice</p>
+                                                                                            <h6 class="d-inline-block">VM0</h6>
+      												</br>
+									                    <label class="label label-warning">Linux Server</label>
+										          </div>
                                                                                             <div class="m-t-15">
-                                                                                                <button type="button" class="btn btn-facebook btn-mini waves-effect waves-light">
-                                                                                                    <span class="icofont icofont-social-facebook"></span>
-                                                                                                </button>
-                                                                                                <button type="button" class="btn btn-twitter btn-mini waves-effect waves-light">
-                                                                                                    <span class="icofont icofont-social-twitter"></span>
-                                                                                                </button>
-                                                                                                <button type="button" class="btn btn-linkedin btn-mini waves-effect waves-light">
-                                                                                                    <span class="icofont icofont-brand-linkedin"></span>
-                                                                                                </button>
-                                                                                                <button type="button" class="btn btn-dribbble btn-mini waves-effect waves-light">
-                                                                                                    <span class="icofont icofont-social-dribble"></span>
-                                                                                                </button>
+       												<i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
+												<i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
+												<i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -790,30 +780,17 @@
                                                                         <div class="card user-card">
                                                                             <div class="card-block">
                                                                                 <div class="media">
-                                                                                    <a class="media-left" href="#">
-                                                                                        <img class="media-object img-circle card-list-img" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                                                    </a>
+                                                                                        <img class="media-object img-circle card-list-img" src="assets/images/net-logo.png" alt="Generic placeholder image">
                                                                                     <div class="media-body">
                                                                                         <div>
-                                                                                            <h6 class="d-inline-block">Heading</h6>
-                                                                                            <label class="label  label-info">Accountant</label>
+                                                                                            <h6 class="d-inline-block">SW0 </h6>
+ 												</br>
+									                    <label class="label label-success">Network Device</label>
                                                                                         </div>
-                                                                                        <div class="f-13 text-muted m-b-15">Softwear Engineer</div>
-                                                                                        <p>Hi, This is my short intro text. Lorem ipsum is a dummy content sit dollar. You can copy and paste this dummy content from anywhere and to anywhere. Its all free and must be a good to folllow
-                                                                                            in prectice</p>
                                                                                             <div class="m-t-15">
-                                                                                                <button type="button" class="btn btn-facebook btn-mini waves-effect waves-light">
-                                                                                                    <span class="icofont icofont-social-facebook"></span>
-                                                                                                </button>
-                                                                                                <button type="button" class="btn btn-twitter btn-mini waves-effect waves-light">
-                                                                                                    <span class="icofont icofont-social-twitter"></span>
-                                                                                                </button>
-                                                                                                <button type="button" class="btn btn-linkedin btn-mini waves-effect waves-light">
-                                                                                                    <span class="icofont icofont-brand-linkedin"></span>
-                                                                                                </button>
-                                                                                                <button type="button" class="btn btn-dribbble btn-mini waves-effect waves-light">
-                                                                                                    <span class="icofont icofont-social-dribble"></span>
-                                                                                                </button>
+       												<i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
+												<i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
+												<i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>

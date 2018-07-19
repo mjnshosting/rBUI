@@ -71,9 +71,31 @@ $(".delete_destination").on("click", function() {
 	$(this).parent().parent().fadeOut();
 });
 
+$('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+        {
+          duration: 2500,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+
+        });
+    });
+
+//Start Graphing Section
 var morrisLine;
 initMorris();
-getMorris(); 
+getMorrisRange(); 
 
 function initMorris() {
    morrisLine = Morris.Area({
@@ -96,18 +118,19 @@ function setMorris(data) {
   morrisLine.setData(data);
 }
 
-function getMorris() {
-$.ajax({
-            url: "pANxv/create-historical-graph.php",
+function getMorrisRange(histChoice) {
+	$.ajax({
+            url: 'pANxv/create-historical-graph.php',
             type: "POST",
             dataType: "json",
+            data: {range : histChoice },
             success: function (data) {
 	            setMorris(data);
             }
 	});
 }
+//End Graphing Section
 
 $(document).ready(function(){
-        document.getElementById("hide-dest-entry").style.display="none";
-        document.getElementById("hide-target-entry").style.display="none";
+
 });
