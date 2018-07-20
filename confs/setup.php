@@ -11,6 +11,9 @@ function generateRandomString($length = 5) {
 }
 
 //Make a randomly named PHP scripts directorye
-mkdir("../interface/" . generateRandomString(), 0755);
+$random_dir = generateRandomString();
+mkdir("../interface/" . $random_dir, 0755);
 
+//This is operational but will be uncommented later
+//rename("scripts" , "../interface/" . $random_dir);
 ?>
