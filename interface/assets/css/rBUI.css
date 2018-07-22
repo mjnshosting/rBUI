@@ -84,15 +84,14 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
   margin-bottom: 15px; }
-  .destination-list i {
-    color: #ccc;
+  .destination-list img {
     font-size: 24px;
     opacity: 0; }
   .destination-list:last-child {
     border: none;
     padding: 0;
     margin: 0; }
-  .destination-list:hover i {
+  .destination-list:hover img {
     opacity: 1;
     transition: opacity ease-in 0.3s; }
   .destination-list p {
@@ -101,4 +100,9 @@
 .btn-rounded-rbui {
     border-radius: 25px !important;
 /*    border: 3px solid transparent !important;*/
+}
+
+.img-dest-buttons {
+	max-width: 24px;
+	height: auto;
 }

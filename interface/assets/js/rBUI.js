@@ -55,13 +55,14 @@ $(".icofont icofont-ui-delete").on("click", function() {
           $(this).parent().parent().parent().fadeOut();
       });
 
+//Have to get rid of this function and replace it with an ajax call
 $("#add-btn").on("click", function() {
 	$(".md-form-control").removeClass("md-valid");
         var destination = $('.add_dest_field').val();
         if (destination == "") {
 		alert("Please enter a Destination");
         } else {
-	        var add_dest = $('<div class="destination-list"><div class="checkbox-fade fade-in-primary"><span> ' + destination + '</span></div><div class="f-right"><a href="#!" class="delete_destination"><i class="icofont icofont-ui-delete"></i></a></div><div class="f-right"><a href="#!" class="edit_destination"><i class="icofont icofont-pencil-alt-5"></i></a></div></div>');
+	        var add_dest = $('<div class="destination-list"><span id="dest-entry-1"> ' + destination + '</span><div class="f-right"><a href="#!" class="edit_destination"><img class="img-dest-buttons" src="assets/images/edit.svg"></img></a>&nbsp;&nbsp;&nbsp;<a href="#!" class="delete_destination"><img class="img-dest-buttons" src="assets/images/recycle.svg"></img></a></div></div>');
         	$(add_dest).appendTo(".new-destination").hide().fadeIn(300);
                 $('.add_dest_field').val('');
         }
