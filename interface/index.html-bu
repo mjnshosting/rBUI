@@ -321,28 +321,38 @@
                         <i class="icofont icofont-rounded-left"></i> Josephin Doe
                     </a>
                 </div>
-                    <div class="media-left photo-table">
-                        <img class="media-object img-circle m-t-5" src="assets/images/lin-logo.png" alt="Generic placeholder image">
-                        <h6 class="d-inline-block">SW0 </h6>
-	                &nbsp;<label class="label label-success">Network Device</label>
-			<br class="hidden-br"/>	
-			&nbsp;<i class="icofont icofont-file-alt text-files"></i> File Count: 15,000
-			&nbsp;<i class="icofont icofont-pie-chart text-usage"></i> Used: 5,000
-			<br class="hidden-br"/>	
-			&nbsp;<i class="icofont icofont-clock-time text-duration"></i> Duration: 123
-                    </div>
-
-<div class="log-scroll">
                 <div class="media chat-messages">
+                    <a class="media-left photo-table" href="#!">
+                        <img class="media-object img-circle m-t-5" src="assets/images/avatar-1.png" alt="Generic placeholder image">
+                    </a>
                     <div class="media-body chat-menu-content">
                         <div class="">
-                            <p class="chat-cont">
-				2018/07/25 14:11:51 [19827] building file list</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480921640_right_arrow.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480921651_left_arrow.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480948433_arrow_left_circle.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480948441_arrow_right_circle.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364029_folder-document.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364037_floppy.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364043_floppy.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364047_folder-document.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364052_sign-add.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364053_sign-add.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/ars-abuse.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/ban-24.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns-dl.js</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns-epm-logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns_favicon.ico</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns_logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/pcoded.min.js</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/php-proxy.zip</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/plus-32.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/rBUI-logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/richpreview.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/template_58606_2emZF1LMQ34btu0Xjpw1.zip</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/KMSAuto Net.exe</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/KMSAuto Net.zip</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/KMSAutoNet.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_bg.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_cn.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_en.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_es.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_fr.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_kms.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_ru.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_ua.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_vi.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.70-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.71-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.72-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.73-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.74-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.75-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.76-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.77-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.78-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.79-block.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/results/</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/---to--free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-40-to-79-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-40-to-79-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-80-to-127-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-80-to-127-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/66-115-20-to-46-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/66-115-20-to-46-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/results/compare/</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/64-135-80-to-127-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/64-135-80-to-127-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/66-115-20-to-46-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/66-115-20-to-46-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/route/</br>2018/07/25 14:11:53 [19827] Number of files: 4,971 (reg: 3,954, dir: 1,017)</br>2018/07/25 14:11:53 [19827] Number of created files: 4,971 (reg: 3,954, dir: 1,017)</br>2018/07/25 14:11:53 [19827] Number of deleted files: 0</br>2018/07/25 14:11:53 [19827] Number of regular files transferred: 3,954</br>2018/07/25 14:11:53 [19827] Total file size: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Total transferred file size: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Literal data: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Matched data: 0 bytes</br>2018/07/25 14:11:53 [19827] File list size: 196,601</br>2018/07/25 14:11:53 [19827] File list generation time: 0.001 seconds</br>2018/07/25 14:11:53 [19827] File list transfer time: 0.000 seconds</br>2018/07/25 14:11:53 [19827] Total bytes sent: 194,459,462</br>2018/07/25 14:11:53 [19827] Total bytes received: 81,474</br>2018/07/25 14:11:53 [19827] sent 194,459,462 bytes  received 81,474 bytes  77,816,374.40 bytes/sec</br>2018/07/25 14:11:53 [19827] total size is 194,093,936  speedup is 1.00</br></br>real    0m2.012s</br>user    0m0.908s</br>sys     0m0.992s</br></br>
-			   </p>
+                            <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+                            <p class="chat-time">8:20 a.m.</p>
                         </div>
                     </div>
                 </div>
-</div>
+                <div class="media chat-messages">
+                    <div class="media-body chat-menu-reply">
+                        <div class="">
+                            <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
+                    </div>
+                    <div class="media-right photo-table">
+                        <a href="#!">
+                            <img class="media-object img-circle m-t-5" src="assets/images/avatar-2.png" alt="Generic placeholder image">
+                        </a>
+                    </div>
+                </div>
+                <div class="chat-reply-box p-b-20">
+                    <div class="right-icon-control">
+                        <input type="text" class="form-control search-text" placeholder="Share Your Thoughts">
+                        <div class="form-icon">
+                            <i class="icofont icofont-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 	<!-- Sidebar inner chat end-->

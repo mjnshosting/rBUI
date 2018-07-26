@@ -6,10 +6,10 @@ function generateRandomDataRange($range) {
     for ($i = 2000; $i < $range; $i++) {
         echo "{\n";
         echo "                \"period\" : \"" . $i . "\",\n";
-        echo "                \"targets\" : \"" . rand(0,100) . "\",\n";
-        echo "                \"files\" : \"" . rand(0,100) . "\",\n";
-        echo "                \"usage\" : \"" . rand(0,100) . "\",\n";
-        echo "                \"duration\" : \"" . rand(0,100) . "\"\n";
+        echo "                \"targets\" : \"" . rand(0,5000) . "\",\n";
+        echo "                \"files\" : \"" . rand(0,5000) . "\",\n";
+        echo "                \"usage\" : \"" . rand(0,5000) . "\",\n";
+        echo "                \"duration\" : \"" . rand(0,5000) . "\"\n";
         if ($i != ($range - 1)) {
                 echo "            },\n";
         } else {
@@ -24,10 +24,10 @@ function generateRandomData() {
 	    for ($i = 2000; $i < $range; $i++) {
 	        echo "{\n";
 	        echo "                \"period\" : \"" . $i . "\",\n";
-	        echo "                \"targets\" : \"" . rand(0,100) . "\",\n";
-	        echo "                \"files\" : \"" . rand(0,100) . "\",\n";
-	        echo "                \"usage\" : \"" . rand(0,100) . "\",\n";
-	        echo "                \"duration\" : \"" . rand(0,100) . "\"\n";
+	        echo "                \"targets\" : \"" . rand(0,5000) . "\",\n";
+	        echo "                \"files\" : \"" . rand(0,5000) . "\",\n";
+	        echo "                \"usage\" : \"" . rand(0,5000) . "\",\n";
+	        echo "                \"duration\" : \"" . rand(0,5000) . "\"\n";
 		if ($i != ($range - 1) ) {
 			echo "            },\n";
 		} else {
