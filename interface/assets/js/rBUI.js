@@ -158,8 +158,9 @@ if ($(window).width() < 992) {
     var a = $(window).height() - 50;
     $(".main-friend-list").slimScroll({
         height: a,
+//        height: "80%",
         allowPageScroll: false,
-        wheelStep: 5,
+        wheelStep: 10,
         color: 'transparent'
     });
 
