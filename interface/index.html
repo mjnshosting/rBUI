@@ -29,10 +29,7 @@
       <!-- Style.css -->
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
       <!--color css-->
-
-      <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css" >
       <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/ionicons.css">
       <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
       <link rel="stylesheet" type="text/css" href="assets/css/rBUI.css">
   </head>
@@ -357,8 +354,8 @@
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu active">
                                     <a href="javascript:void(0)">
-                                        <span class="pcoded-micon"><i class="ti-home"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+					<img class="img-dest-buttons" src="assets/images/dashboard.png">
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">&nbsp;&nbsp;Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
@@ -382,8 +379,8 @@
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="">
                                     <a href="#!" data-toggle="modal" data-target="#settings-modal">
-                                        <span class="pcoded-micon"><i class="ti-settings"></i></span>
-                                        <span class="pcoded-mtext">Settings</span>
+					<img class="img-dest-buttons" src="assets/images/settings.png">
+                                        <span class="pcoded-mtext">&nbsp;&nbsp;Settings</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -393,8 +390,8 @@
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="">
                                     <a href="https://mjnshosting.atlassian.net/wiki/spaces/MKB/pages/634486785/rPi+BackUp+Interface+rBUI" data-i18n="nav.documentation.main" target="_blank">
-                                        <span class="pcoded-micon"><i class="ti-file"></i></span>
-                                        <span class="pcoded-mtext">Documentation</span>
+					<img class="img-dest-buttons" src="assets/images/documentation.png">
+                                        <span class="pcoded-mtext">&nbsp;&nbsp;Documentation</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -403,9 +400,9 @@
                             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.actions" >Actions</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="">
-                                    <a href="logout.html" data-i18n="nav.actions#!" >
-                                        <span class="pcoded-micon"><i class="ti-layout-sidebar"></i></span>
-                                        <span class="pcoded-mtext">Logout</span>
+                                    <a href="#!" onclick="logout()" data-i18n="nav.actions#!" >
+					<img class="img-dest-buttons" src="assets/images/logout.png">
+                                        <span class="pcoded-mtext">&nbsp;&nbsp;Logout</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -427,7 +424,7 @@
                                         <div class="page-header-breadcrumb">
                                             <ul class="breadcrumb-title">
                                                 <li class="breadcrumb-item">
-                                                    <i class="icofont icofont-home"></i>
+							<img class="img-dest-buttons" src="assets/images/dashboard.png">
                                                 </li>
                                                 <li class="breadcrumb-item">Dashboard</li>
                                                 <li class="breadcrumb-item">rBUI</li>
