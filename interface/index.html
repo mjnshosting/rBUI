@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>MJNS rBUI</title>
-    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+   <head>
+      <title>MJNS rBUI</title>
+      <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
@@ -32,831 +31,781 @@
       <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
       <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
       <link rel="stylesheet" type="text/css" href="assets/css/rBUI.css">
-  </head>
-
-  <body>
-
-
-
-    <div id="pcoded" class="pcoded">
-        <div class="pcoded-overlay-box"></div>
-        <div class="pcoded-container navbar-wrapper">
+   </head>
+   <body>
+      <div id="pcoded" class="pcoded">
+         <div class="pcoded-overlay-box"></div>
+         <div class="pcoded-container navbar-wrapper">
             <nav class="navbar header-navbar pcoded-header" >
-                <div class="navbar-wrapper">
-                    <div class="navbar-logo" data-navbar-theme="theme4">
-                        <a class="mobile-menu" id="mobile-collapse" href="#!">
-                            <i class="ti-menu"></i>
-                        </a>
-                        <img class="img-fluid-logo" src="assets/images/rBUI-logo.png" alt="MJNS rBUI" />
-                        <a class="mobile-options">
-                            <i class="ti-more"></i>
-                        </a>
-                    </div>
-                    <div class="navbar-container container-fluid">
-                        <div>
-                            <ul class="nav-right">
-                                <li class="header-notification">
-                                    <a href="#!">
-<img class="img-dest-buttons" src="assets/images/notification.png" alt="Notification">
-                                        <span class="badge">
-						<div id="notification-count">5</div>
-					</span>
-                                    </a>
-                                    <ul class="show-notification">
-                                        <li>
-                                            <h6>Notifications</h6>
-                                            <label class="label label-danger">New</label>
-                                        </li>
-
-				<!-- Start Notifications -->
-
-                                        <li>
-                                            <div class="media">
-                                                <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <h5 class="notification-user">John Doe</h5>
-                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                    <span class="notification-time">30 minutes ago</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="media">
-                                                <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <h5 class="notification-user">Joseph William</h5>
-                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                    <span class="notification-time">30 minutes ago</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="media">
-                                                <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <h5 class="notification-user">Sara Soudein</h5>
-                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                    <span class="notification-time">30 minutes ago</span>
-                                                </div>
-                                            </div>
-                                        </li>
-
-				<!-- End Notifications -->
-
-                                    </ul>
-                                </li>
-                                <li class="header-notification">
-                                    <a href="#!" class="displayChatbox mobile-options-hide">
-					<img class="img-dest-buttons" src="assets/images/alert.png" alt="Warning">
-                                        <span class="badge">
-						<div id="alert-count">9</div>
-					</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+               <div class="navbar-wrapper">
+                  <div class="navbar-logo" data-navbar-theme="theme4">
+                     <a class="mobile-menu" id="mobile-collapse" href="#!">
+                     <i class="ti-menu"></i>
+                     </a>
+                     <img class="img-fluid-logo" src="assets/images/rBUI-logo.png" alt="MJNS rBUI" />
+                     <a class="mobile-options">
+                     <i class="ti-more"></i>
+                     </a>
+                  </div>
+                  <div class="navbar-container container-fluid">
+                     <div>
+                        <ul class="nav-right">
+                           <li class="header-notification">
+                              <a href="#!">
+                                 <img class="img-dest-buttons" src="assets/images/notification.png" alt="Notification">
+                                 <span class="badge">
+                                    <div id="notification-count">5</div>
+                                 </span>
+                              </a>
+                              <ul class="show-notification">
+                                 <li>
+                                    <h6>Notifications</h6>
+                                    <label class="label label-danger">New</label>
+                                 </li>
+                                 <!-- Start Notifications -->
+                                 <li>
+                                    <div class="media">
+                                       <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
+                                       <div class="media-body">
+                                          <h5 class="notification-user">John Doe</h5>
+                                          <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                          <span class="notification-time">30 minutes ago</span>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="media">
+                                       <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
+                                       <div class="media-body">
+                                          <h5 class="notification-user">Joseph William</h5>
+                                          <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                          <span class="notification-time">30 minutes ago</span>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="media">
+                                       <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
+                                       <div class="media-body">
+                                          <h5 class="notification-user">Sara Soudein</h5>
+                                          <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                          <span class="notification-time">30 minutes ago</span>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <!-- End Notifications -->
+                              </ul>
+                           </li>
+                           <li class="header-notification">
+                              <a href="#!" class="displayChatbox mobile-options-hide">
+                                 <img class="img-dest-buttons" src="assets/images/alert.png" alt="Warning">
+                                 <span class="badge">
+                                    <div id="alert-count">9</div>
+                                 </span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </nav>
-
             <!-- Sidebar chat start -->
             <div id="sidebar" class="users p-chat-user showChat">
-                <div class="had-container">
-                    <div class="card card_main p-fixed users-main">
-                        <div class="user-box">
-                            <div class="card-block-log-list">
-                                <div class="right-icon-control">
-                                </div>
-                            </div>
-			    <div class="main-friend-list">
-</br>
-                <div class="media log-inner-header">
-                    <a class="alert_Box displayChatbox">
-                        <img class="img-dest-buttons" src="assets/images/alert.png" alt="Warning"> Recent Logs 
-                                        <img class="img-dest-buttons" src="assets/images/alert.png" alt="Warning">
-                    </a>
-                </div>
-		<!-- Start Notification List -->
-				
-                                <div class="media userlist-box" data-id="2" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/win-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">WINSERVER0</div>
-					<label class="label label-success">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="3" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/lin-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">LINSERVER1</div>
-					<label class="label label-info">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="4" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/net-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">SWITCH0</div>
-					<label class="label label-primary">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="2" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/win-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">WINSERVER0</div>
-					<label class="label label-success">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="3" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/lin-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">LINSERVER1</div>
-					<label class="label label-info">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="4" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/net-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">SWITCH0</div>
-					<label class="label label-primary">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="2" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/win-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">WINSERVER0</div>
-					<label class="label label-success">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="3" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/lin-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">LINSERVER1</div>
-					<label class="label label-info">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="4" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/net-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">SWITCH0</div>
-					<label class="label label-primary">07/29/18</label>
-                                    </div>
-                                </div>
-                                <div class="media userlist-box" data-id="2" data-status="online" data-toggle="tooltip" data-placement="left">
-                                    <a class="media-left" href="#!">
-                                        <img class="media-object img-circle" src="assets/images/win-logo.png">
-                                        <div class="live-status bg-success"></div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="f-13 chat-header">WINSERVER0</div>
-					<label class="label label-success">07/29/18</label>
-                                    </div>
-                                </div>
-
-			<!-- End Notification List -->
-</br>
-</br>
-                            </div>
+               <div class="had-container">
+                  <div class="card card_main p-fixed users-main">
+                     <div class="user-box">
+                        <div class="card-block-log-list">
+                           <div class="right-icon-control">
+                           </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="main-friend-list">
+                           </br>
+                           <div class="media log-inner-header">
+                              <a class="alert_Box displayChatbox">
+                              <img class="img-dest-buttons" src="assets/images/alert.png" alt="Warning"> Recent Logs 
+                              <img class="img-dest-buttons" src="assets/images/alert.png" alt="Warning">
+                              </a>
+                           </div>
+                           <!-- Start Notification List -->
+                           <div class="media userlist-box" data-id="2" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/win-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">WINSERVER0</div>
+                                 <label class="label label-success">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="3" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/lin-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">LINSERVER1</div>
+                                 <label class="label label-info">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="4" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/net-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">SWITCH0</div>
+                                 <label class="label label-primary">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="2" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/win-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">WINSERVER0</div>
+                                 <label class="label label-success">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="3" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/lin-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">LINSERVER1</div>
+                                 <label class="label label-info">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="4" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/net-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">SWITCH0</div>
+                                 <label class="label label-primary">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="2" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/win-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">WINSERVER0</div>
+                                 <label class="label label-success">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="3" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/lin-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">LINSERVER1</div>
+                                 <label class="label label-info">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="4" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/net-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">SWITCH0</div>
+                                 <label class="label label-primary">07/29/18</label>
+                              </div>
+                           </div>
+                           <div class="media userlist-box" data-id="2" data-status="online" data-toggle="tooltip" data-placement="left">
+                              <a class="media-left" href="#!">
+                                 <img class="media-object img-circle" src="assets/images/win-logo.png">
+                                 <div class="live-status bg-success"></div>
+                              </a>
+                              <div class="media-body">
+                                 <div class="f-13 chat-header">WINSERVER0</div>
+                                 <label class="label label-success">07/29/18</label>
+                              </div>
+                           </div>
+                           <!-- End Notification List -->
+                           </br>
+                           </br>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-	<!-- Sidebar inner chat start-->
-
+            <!-- Sidebar inner chat start-->
             <div class="showChat_inner">
-                <div class="media log-inner-header">
-                </div>
-                    <div class="media-left photo-table back_logList" style="text-align:center;">
-			<i class="icofont icofont-rounded-left"></i>
-                        &nbsp;&nbsp;<img class="media-object img-circle m-t-5" src="assets/images/lin-logo.png" alt="Generic placeholder image">
-                        <h6 class="d-inline-block">SW0 </h6>
-	                &nbsp;<label class="label label-success">Network Device</label>
-			<br class="hidden-br"/>	
-			&nbsp;<i class="icofont icofont-file-alt text-files"></i> File Count: 15,000
-			&nbsp;<i class="icofont icofont-pie-chart text-usage"></i> Used: 5,000
-			<br class="hidden-br"/>	
-			&nbsp;<i class="icofont icofont-clock-time text-duration"></i> Duration: 123
-                    </div>
-
-<div class="log-scroll">
-                <div class="media chat-messages">
-                    <div class="media-body chat-menu-content">
+               <div class="media log-inner-header">
+               </div>
+               <div class="media-left photo-table back_logList" style="text-align:center;">
+                  <i class="icofont icofont-rounded-left"></i>
+                  &nbsp;&nbsp;<img class="media-object img-circle m-t-5" src="assets/images/lin-logo.png" alt="Generic placeholder image">
+                  <h6 class="d-inline-block">SW0 </h6>
+                  &nbsp;<label class="label label-success">Network Device</label>
+                  <br class="hidden-br"/>	
+                  &nbsp;<i class="icofont icofont-file-alt text-files"></i> File Count: 15,000
+                  &nbsp;<i class="icofont icofont-pie-chart text-usage"></i> Used: 5,000
+                  <br class="hidden-br"/>	
+                  &nbsp;<i class="icofont icofont-clock-time text-duration"></i> Duration: 123
+               </div>
+               <div class="log-scroll">
+                  <div class="media chat-messages">
+                     <div class="media-body chat-menu-content">
                         <div class="">
-                            <p class="chat-cont">
-				2018/07/25 14:11:51 [19827] building file list</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480921640_right_arrow.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480921651_left_arrow.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480948433_arrow_left_circle.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480948441_arrow_right_circle.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364029_folder-document.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364037_floppy.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364043_floppy.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364047_folder-document.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364052_sign-add.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364053_sign-add.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/ars-abuse.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/ban-24.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns-dl.js</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns-epm-logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns_favicon.ico</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns_logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/pcoded.min.js</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/php-proxy.zip</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/plus-32.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/rBUI-logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/richpreview.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/template_58606_2emZF1LMQ34btu0Xjpw1.zip</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/KMSAuto Net.exe</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/KMSAuto Net.zip</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/KMSAutoNet.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_bg.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_cn.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_en.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_es.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_fr.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_kms.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_ru.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_ua.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_vi.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.70-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.71-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.72-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.73-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.74-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.75-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.76-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.77-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.78-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.79-block.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/results/</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/---to--free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-40-to-79-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-40-to-79-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-80-to-127-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-80-to-127-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/66-115-20-to-46-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/66-115-20-to-46-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/results/compare/</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/64-135-80-to-127-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/64-135-80-to-127-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/66-115-20-to-46-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/66-115-20-to-46-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/route/</br>2018/07/25 14:11:53 [19827] Number of files: 4,971 (reg: 3,954, dir: 1,017)</br>2018/07/25 14:11:53 [19827] Number of created files: 4,971 (reg: 3,954, dir: 1,017)</br>2018/07/25 14:11:53 [19827] Number of deleted files: 0</br>2018/07/25 14:11:53 [19827] Number of regular files transferred: 3,954</br>2018/07/25 14:11:53 [19827] Total file size: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Total transferred file size: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Literal data: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Matched data: 0 bytes</br>2018/07/25 14:11:53 [19827] File list size: 196,601</br>2018/07/25 14:11:53 [19827] File list generation time: 0.001 seconds</br>2018/07/25 14:11:53 [19827] File list transfer time: 0.000 seconds</br>2018/07/25 14:11:53 [19827] Total bytes sent: 194,459,462</br>2018/07/25 14:11:53 [19827] Total bytes received: 81,474</br>2018/07/25 14:11:53 [19827] sent 194,459,462 bytes  received 81,474 bytes  77,816,374.40 bytes/sec</br>2018/07/25 14:11:53 [19827] total size is 194,093,936  speedup is 1.00</br></br>real    0m2.012s</br>user    0m0.908s</br>sys     0m0.992s</br></br>
-			   </p>
+                           <p class="chat-cont">
+                              2018/07/25 14:11:51 [19827] building file list</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480921640_right_arrow.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480921651_left_arrow.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480948433_arrow_left_circle.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1480948441_arrow_right_circle.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364029_folder-document.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364037_floppy.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364043_floppy.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364047_folder-document.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364052_sign-add.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/1482364053_sign-add.svg</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/ars-abuse.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/ban-24.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns-dl.js</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns-epm-logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns_favicon.ico</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/mjns_logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/pcoded.min.js</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/php-proxy.zip</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/plus-32.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/rBUI-logo.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/richpreview.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/template_58606_2emZF1LMQ34btu0Xjpw1.zip</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/KMSAuto Net.exe</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/KMSAuto Net.zip</br>2018/07/25 14:11:51 [19827] cd+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/KMSAutoNet.png</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_bg.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_cn.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_en.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_es.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_fr.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_kms.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_ru.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_ua.txt</br>2018/07/25 14:11:51 [19827] >f+++++++++ downloads/KMSAuto Net 2015 v1.3.8 Portable/readme/readme_vi.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.70-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.71-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.72-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.73-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.74-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.75-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.76-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.77-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.78-block.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/blocks/64.135.79-block.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/results/</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/---to--free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-40-to-79-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-40-to-79-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-80-to-127-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/64-135-80-to-127-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/66-115-20-to-46-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/66-115-20-to-46-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/results/compare/</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/64-135-80-to-127-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/64-135-80-to-127-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/66-115-20-to-46-free-ip-report.txt</br>2018/07/25 14:11:53 [19827] >f+++++++++ downloads/v3-ip-block-search/results/compare/66-115-20-to-46-free-ip-results.txt</br>2018/07/25 14:11:53 [19827] cd+++++++++ downloads/v3-ip-block-search/route/</br>2018/07/25 14:11:53 [19827] Number of files: 4,971 (reg: 3,954, dir: 1,017)</br>2018/07/25 14:11:53 [19827] Number of created files: 4,971 (reg: 3,954, dir: 1,017)</br>2018/07/25 14:11:53 [19827] Number of deleted files: 0</br>2018/07/25 14:11:53 [19827] Number of regular files transferred: 3,954</br>2018/07/25 14:11:53 [19827] Total file size: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Total transferred file size: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Literal data: 194,093,936 bytes</br>2018/07/25 14:11:53 [19827] Matched data: 0 bytes</br>2018/07/25 14:11:53 [19827] File list size: 196,601</br>2018/07/25 14:11:53 [19827] File list generation time: 0.001 seconds</br>2018/07/25 14:11:53 [19827] File list transfer time: 0.000 seconds</br>2018/07/25 14:11:53 [19827] Total bytes sent: 194,459,462</br>2018/07/25 14:11:53 [19827] Total bytes received: 81,474</br>2018/07/25 14:11:53 [19827] sent 194,459,462 bytes  received 81,474 bytes  77,816,374.40 bytes/sec</br>2018/07/25 14:11:53 [19827] total size is 194,093,936  speedup is 1.00</br></br>real    0m2.012s</br>user    0m0.908s</br>sys     0m0.992s</br></br>
+                           </p>
                         </div>
-                    </div>
-                </div>
-</div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-	<!-- Sidebar inner chat end-->
-
-
+            <!-- Sidebar inner chat end-->
             <div class="pcoded-main-container">
-                <div class="pcoded-wrapper">
-                    <nav class="pcoded-navbar" >
-                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
-                        <div class="pcoded-inner-navbar main-menu">
-
-                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation"  >Navigation</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu active">
-                                    <a href="javascript:void(0)">
-					<img class="img-dest-buttons" src="assets/images/dashboard.png">
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">&nbsp;&nbsp;Dashboard</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class="">
-                                            <a href="#!" onclick="showdest()">
-                                                <span class="pcoded-micon"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.dash.destination">Destination</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="#!" onclick="showtarget()">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.dash.target">Target</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
+               <div class="pcoded-wrapper">
+                  <nav class="pcoded-navbar" >
+                     <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                     <div class="pcoded-inner-navbar main-menu">
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation"  >Navigation</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                        <li class="pcoded-hasmenu active">
+                           <a href="javascript:void(0)">
+                           <img class="img-dest-buttons" src="assets/images/dashboard.png">
+                           <span class="pcoded-mtext" data-i18n="nav.dash.main">&nbsp;&nbsp;Dashboard</span>
+                           <span class="pcoded-mcaret"></span>
+                           </a>
+                           <ul class="pcoded-submenu">
+                              <li class="">
+                                 <a href="#!" onclick="showdest()">
+                                 <span class="pcoded-micon"></i></span>
+                                 <span class="pcoded-mtext" data-i18n="nav.dash.destination">Destination</span>
+                                 <span class="pcoded-mcaret"></span>
+                                 </a>
+                              </li>
+                              <li class=" ">
+                                 <a href="#!" onclick="showtarget()">
+                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                 <span class="pcoded-mtext" data-i18n="nav.dash.target">Target</span>
+                                 <span class="pcoded-mcaret"></span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <ul class="pcoded-item pcoded-left-item">
+                           <li class="">
+                              <a href="#!" data-toggle="modal" data-target="#settings-modal">
+                              <img class="img-dest-buttons" src="assets/images/settings.png">
+                              <span class="pcoded-mtext">&nbsp;&nbsp;Settings</span>
+                              <span class="pcoded-mcaret"></span>
+                              </a>
+                           </li>
+                        </ul>
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.support" >Support</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                           <li class="">
+                              <a href="https://mjnshosting.atlassian.net/wiki/spaces/MKB/pages/634486785/rPi+BackUp+Interface+rBUI" data-i18n="nav.documentation.main" target="_blank">
+                              <img class="img-dest-buttons" src="assets/images/documentation.png">
+                              <span class="pcoded-mtext">&nbsp;&nbsp;Documentation</span>
+                              <span class="pcoded-mcaret"></span>
+                              </a>
+                           </li>
+                        </ul>
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.actions" >Actions</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                           <li class="">
+                              <a href="#!" onclick="logout()" data-i18n="nav.actions#!" >
+                              <img class="img-dest-buttons" src="assets/images/logout.png">
+                              <span class="pcoded-mtext">&nbsp;&nbsp;Logout</span>
+                              <span class="pcoded-mcaret"></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+                  <!-- Start of Inner Page -->
+                  <div class="pcoded-content">
+                     <div class="pcoded-inner-content">
+                        <div class="main-body">
+                           <div class="page-wrapper">
+                              <div class="page-header">
+                                 <div class="page-header-title">
+                                    <h4>rBUI Dashboard</h4>
+                                 </div>
+                                 <div class="page-header-breadcrumb">
+                                    <ul class="breadcrumb-title">
+                                       <li class="breadcrumb-item">
+                                          <img class="img-dest-buttons" src="assets/images/dashboard.png">
+                                       </li>
+                                       <li class="breadcrumb-item">Dashboard</li>
+                                       <li class="breadcrumb-item">rBUI</li>
                                     </ul>
-                                </li>
-
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="#!" data-toggle="modal" data-target="#settings-modal">
-					<img class="img-dest-buttons" src="assets/images/settings.png">
-                                        <span class="pcoded-mtext">&nbsp;&nbsp;Settings</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.support" >Support</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="https://mjnshosting.atlassian.net/wiki/spaces/MKB/pages/634486785/rPi+BackUp+Interface+rBUI" data-i18n="nav.documentation.main" target="_blank">
-					<img class="img-dest-buttons" src="assets/images/documentation.png">
-                                        <span class="pcoded-mtext">&nbsp;&nbsp;Documentation</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.actions" >Actions</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="#!" onclick="logout()" data-i18n="nav.actions#!" >
-					<img class="img-dest-buttons" src="assets/images/logout.png">
-                                        <span class="pcoded-mtext">&nbsp;&nbsp;Logout</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-
-<!-- Start of Inner Page -->
-
-                    <div class="pcoded-content">
-                        <div class="pcoded-inner-content">
-
-                            <div class="main-body">
-                                <div class="page-wrapper">
-                                    <div class="page-header">
-                                        <div class="page-header-title">
-                                            <h4>rBUI Dashboard</h4>
-                                        </div>
-                                        <div class="page-header-breadcrumb">
-                                            <ul class="breadcrumb-title">
-                                                <li class="breadcrumb-item">
-							<img class="img-dest-buttons" src="assets/images/dashboard.png">
+                                 </div>
+                              </div>
+                              <div class="page-body">
+                                 <div class="row">
+                                    <!-- Documents card start -->
+                                    <div class="col-md-6 col-xl-3">
+                                       <div class="card client-blocks text-target">
+                                          <div class="card-block">
+                                             <h5>Targets:</h5>
+                                             <ul>
+                                                <li>
+                                                   <i class="icofont icofont-ui-folder"></i>
                                                 </li>
-                                                <li class="breadcrumb-item">Dashboard</li>
-                                                <li class="breadcrumb-item">rBUI</li>
-                                            </ul>
-                                        </div>
+                                                <li class="text-right counter-value" data-count="70"></li>
+                                             </ul>
+                                          </div>
+                                       </div>
                                     </div>
-                                    <div class="page-body">
-                                        <div class="row">
-
-                                            <!-- Documents card start -->
-                                            <div class="col-md-6 col-xl-3">
-                                                <div class="card client-blocks text-target">
-                                                    <div class="card-block">
-                                                        <h5>Targets:</h5>
-                                                        <ul>
-                                                            <li>
-                                                                <i class="icofont icofont-ui-folder"></i>
-                                                            </li>
-                                                            <li class="text-right counter-value" data-count="70"></li>
-                                                        </ul>
-                                                    </div>
+                                    <!-- Documents card end -->
+                                    <!-- New clients card start -->
+                                    <div class="col-md-6 col-xl-3">
+                                       <div class="card client-blocks text-files">
+                                          <div class="card-block">
+                                             <h5>Total File Count:</h5>
+                                             <ul>
+                                                <li>
+                                                   <i class="icofont icofont-file-alt text-files"></i>
+                                                </li>
+                                                <li class="text-right text-files counter-value" data-count="2300"></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- New clients card end -->
+                                    <!-- New files card start -->
+                                    <div class="col-md-6 col-xl-3">
+                                       <div class="card client-blocks text-usage">
+                                          <div class="card-block">
+                                             <h5>Total Storage Used:</h5>
+                                             <ul>
+                                                <li>
+                                                   <i class="icofont icofont-pie-chart text-usage"></i>
+                                                </li>
+                                                <li class="text-right text-usage counter-value" data-count="169736"></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- New files card end -->
+                                    <!-- Open Project card start -->
+                                    <div class="col-md-6 col-xl-3">
+                                       <div class="card client-blocks text-duration">
+                                          <div class="card-block">
+                                             <h5>Last Backup Duration:</h5>
+                                             <ul>
+                                                <li>
+                                                   <i class="icofont icofont-clock-time text-duration"></i>
+                                                </li>
+                                                <li class="text-right text-duration counter-value" data-count="123"></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- Open Project card end -->
+                                    <div id="dest-entry"></div>
+                                    <div id="target-entry"></div>
+                                    <!-- Destination Entry start -->
+                                    <div class="col-md-12 col-xl2-">
+                                       <div class="card" id="hide-dest-entry" style="display: none;">
+                                          <div class="card-header">
+                                             <h5>Destination Entry:</h5>
+                                             <div class="card-header-right">
+                                                <i class="icofont icofont-close-circled"></i>
+                                             </div>
+                                          </div>
+                                          <div class="card-block">
+                                             <div class="input-group input-group-button">
+                                                <input type="text" class="form-control add_dest_field" placeholder="/mnt/external0" name="destination-insert">
+                                                <span class="input-group-addon" id="basic-addon1">
+                                                <button id="add-btn" class="btn btn-primary">Add Destination</button>
+                                                </span>
+                                             </div>
+                                             <div class="new-destination">
+                                                <div class="destination-list">
+                                                   <span id="dest-entry-1">/var/www/html</span>
+                                                   <div class="f-right">
+                                                      <a href="#!" class="edit_destination"><img class="img-dest-buttons" src="assets/images/edit.svg"></img></a>
+                                                      &nbsp;&nbsp;&nbsp;
+                                                      <a href="#!" class="delete_destination"><img class="img-dest-buttons" src="assets/images/recycle.svg"></img></a>
+                                                   </div>
                                                 </div>
-                                            </div>
-                                            <!-- Documents card end -->
-                                            <!-- New clients card start -->
-                                            <div class="col-md-6 col-xl-3">
-                                                <div class="card client-blocks text-files">
-                                                    <div class="card-block">
-                                                        <h5>Total File Count:</h5>
-                                                        <ul>
-                                                            <li>
-                                                                <i class="icofont icofont-file-alt text-files"></i>
-                                                            </li>
-                                                            <li class="text-right text-files counter-value" data-count="2300"></li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="destination-list">
+                                                   <span id="dest-entry-2">/home/mjns/mnt</span>
+                                                   <div class="f-right">
+                                                      <a href="#!" class="edit_destination"><img class="img-dest-buttons" src="assets/images/edit.svg"></img></a>
+                                                      &nbsp;&nbsp;&nbsp;
+                                                      <a href="#!" class="delete_destination"><img class="img-dest-buttons" src="assets/images/recycle.svg"></img></a>
+                                                   </div>
                                                 </div>
-                                            </div>
-                                            <!-- New clients card end -->
-                                            <!-- New files card start -->
-                                            <div class="col-md-6 col-xl-3">
-                                                <div class="card client-blocks text-usage">
-                                                    <div class="card-block">
-                                                        <h5>Total Storage Used:</h5>
-                                                        <ul>
-                                                            <li>
-                                                                <i class="icofont icofont-pie-chart text-usage"></i>
-                                                            </li>
-                                                            <li class="text-right text-usage counter-value" data-count="169736"></li>
-                                                        </ul>
-                                                    </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- Destination Entry end -->
+                                    <!-- Basic Inputs Validation start -->
+                                    <div class="col-sm-12">
+                                       <div class="card" id="hide-target-entry" style="display: none;">
+                                          <div class="card-header">
+                                             <h5>Target Entry:</h5>
+                                             <div class="card-header-right">
+                                                <i class="hide icofont icofont-close-circled"></i>
+                                             </div>
+                                          </div>
+                                          <div class="card-block">
+                                             <form id="main" method="post" action="/" novalidate="">
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2 col-form-label">Target Name</label>
+                                                   <div class="col-sm-10">
+                                                      <input type="text" class="form-control" name="target-name" id="target-name" placeholder="rBUI Target Name">
+                                                      <span class="messages"></span>
+                                                   </div>
                                                 </div>
-                                            </div>
-                                            <!-- New files card end -->
-                                            <!-- Open Project card start -->
-                                            <div class="col-md-6 col-xl-3">
-                                                <div class="card client-blocks text-duration">
-                                                    <div class="card-block">
-                                                        <h5>Last Backup Duration:</h5>
-                                                        <ul>
-                                                            <li>
-                                                                <i class="icofont icofont-clock-time text-duration"></i>
-                                                            </li>
-                                                            <li class="text-right text-duration counter-value" data-count="123"></li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2 col-form-label">Target Server</label>
+                                                   <div class="col-sm-10">
+                                                      <input type="text" class="form-control" name="server-name" id="server-name" placeholder="Server IP or FQDN">
+                                                      <span class="messages"></span>
+                                                   </div>
                                                 </div>
-                                            </div>
-                                            <!-- Open Project card end -->
-<div id="dest-entry"></div>
-<div id="target-entry"></div>
-					    <!-- Destination Entry start -->
-                                            <div class="col-md-12 col-xl2-">
-                                                <div class="card" id="hide-dest-entry" style="display: none;">
-                                                    <div class="card-header">
-                                                        <h5>Destination Entry:</h5>
-                                                    <div class="card-header-right">
-                                                        <i class="icofont icofont-close-circled"></i>
-                                                    </div>
-
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div class="input-group input-group-button">
-                                                            <input type="text" class="form-control add_dest_field" placeholder="/mnt/external0" name="destination-insert">
-                                                            <span class="input-group-addon" id="basic-addon1">
-                                                              <button id="add-btn" class="btn btn-primary">Add Destination</button>
-                                                          </span>
+                                                <div class="row">
+                                                   <label class="col-sm-2 col-form-label">Target Type</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="form-check form-check-inline">
+                                                         <label class="form-check-label">
+                                                         <input class="form-check-input" type="radio" name="target-type" id="windows" value="windows"> Windows Server
+                                                         </label>
                                                       </div>
-                                                      <div class="new-destination">
-                                                        <div class="destination-list">
-                                                            <span id="dest-entry-1">/var/www/html</span>
-                                                            <div class="f-right">
-                                                                <a href="#!" class="edit_destination"><img class="img-dest-buttons" src="assets/images/edit.svg"></img></a>
-								&nbsp;&nbsp;&nbsp;
-                                                                <a href="#!" class="delete_destination"><img class="img-dest-buttons" src="assets/images/recycle.svg"></img></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="destination-list">
-                                                            <span id="dest-entry-2">/home/mjns/mnt</span>
-                                                            <div class="f-right">
-                                                                <a href="#!" class="edit_destination"><img class="img-dest-buttons" src="assets/images/edit.svg"></img></a>
-								&nbsp;&nbsp;&nbsp;
-                                                                <a href="#!" class="delete_destination"><img class="img-dest-buttons" src="assets/images/recycle.svg"></img></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                      <div class="form-check form-check-inline">
+                                                         <label class="form-check-label">
+                                                         <input class="form-check-input" type="radio" name="target-type" id="linux" value="linux"> Linux Server
+                                                         </label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                         <label class="form-check-label">
+                                                         <input class="form-check-input" type="radio" name="target-type" id="network" value="network"> Network Device
+                                                         </label>
+                                                      </div>
+                                                      <span class="messages"></span>
+                                                   </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Destination Entry end -->
-
-					    
-					    <!-- Basic Inputs Validation start -->
-<div class="col-sm-12">
-					    <div class="card" id="hide-target-entry" style="display: none;">
-                                                <div class="card-header">
-                                                    <h5>Target Entry:</h5>
-                                                    <div class="card-header-right">
-                                                        <i class="hide icofont icofont-close-circled"></i>
-                                                    </div>
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2 col-form-label">Target Directory</label>
+                                                   <div class="col-sm-10">
+                                                      <input type="text" class="form-control" id="server-directory" name="server-directory" placeholder="Full Path \\fileserver\data | /home/user">
+                                                      <span class="messages">Defaults to master destination. See settings.</span>
+                                                   </div>
                                                 </div>
-                                                <div class="card-block">
-                                                    <form id="main" method="post" action="/" novalidate="">
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Target Name</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control" name="target-name" id="target-name" placeholder="rBUI Target Name">
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Target Server</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control" name="server-name" id="server-name" placeholder="Server IP or FQDN">
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <label class="col-sm-2 col-form-label">Target Type</label>
-                                                            <div class="col-sm-10">
-                                                                <div class="form-check form-check-inline">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="radio" name="target-type" id="windows" value="windows"> Windows Server
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="radio" name="target-type" id="linux" value="linux"> Linux Server
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="radio" name="target-type" id="network" value="network"> Network Device
-                                                                    </label>
-                                                                </div>
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Target Directory</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control" id="server-directory" name="server-directory" placeholder="Full Path \\fileserver\data | /home/user">
-                                                                <span class="messages">Defaults to master destination. See settings.</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Target User Name</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control" id="server-user" name="server-user" placeholder="Username">
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Target Domain</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control" id="server-domain" name="server-domain" placeholder="Windows Domain Name">
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Destination</label>
-                                                            <div class="col-sm-10">
-							    
-							    <select name="select" class="form-control">
-                                                                <option value="dest-opt1">/var/www/html</option>
-                                                                <option value="dest-opt2">/home/mjns/mnt</option>
-                                                            </select>
-
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Password</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="password" class="form-control" id="password" name="password" placeholder="Password Input">
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Repeat Password</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="password" class="form-control" id="repeat-password" name="repeat-password" placeholder="Repeat Password">
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <label class="col-sm-2 col-form-label">Status</label>
-                                                            <div class="col-sm-10">
-                                                                <div class="form-check form-check-inline">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="radio" name="gender" id="gender-1" value="option1"> Enable
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="radio" name="gender" id="gender-2" value="option2"> Disable
-                                                                    </label>
-                                                                </div>
-                                                                <span class="messages"></span>
-                                                            </div>
-                                                        </div>
-
-
-
-
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2"></label>
-                                                            <div class="col-sm-10">
-                                                                <button type="submit" class="btn btn-primary m-b-0">Submit</button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2 col-form-label">Target User Name</label>
+                                                   <div class="col-sm-10">
+                                                      <input type="text" class="form-control" id="server-user" name="server-user" placeholder="Username">
+                                                      <span class="messages"></span>
+                                                   </div>
                                                 </div>
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2 col-form-label">Target Domain</label>
+                                                   <div class="col-sm-10">
+                                                      <input type="text" class="form-control" id="server-domain" name="server-domain" placeholder="Windows Domain Name">
+                                                      <span class="messages"></span>
+                                                   </div>
                                                 </div>
-                                            </div>
-
-					    <!-- Basic Inputs Validation end -->
-
-                                            <!-- Morris chart start -->
-                                            <div class="col-md-12 col-xl-12">
-                                                <div class="card">
-                                                    <div class="card-header success-border">
-	    					        <h5>Historical Data:</h5>
-							<br class="hidden-br"/>
-                                                        <button class="btn btn-info btn-sm" onclick="getMorrisRange(2040);">Week</button>
-                                                        <button class="btn btn-info btn-sm" onclick="getMorrisRange(2050);">Month</button>
-                                                        <button class="btn btn-info btn-sm" onclick="getMorrisRange(2060);">Year</button>
-                                                        <button class="btn btn-info btn-sm" onclick="getMorrisRange();">All</button>
-							    <div class="card-header-right">
-                	                                        <a href="#!" onclick="getMorrisRange();"><i class="icofont icofont-refresh"></i></a>
-                                	                    </div>
-                                                    </div>
-                                                    
-						    <div class="card-block">
-                                                        <div id="morris-extra-area" style="height:470px;"></div>
-                                                    </div>
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2 col-form-label">Destination</label>
+                                                   <div class="col-sm-10">
+                                                      <select name="select" class="form-control">
+                                                         <option value="dest-opt1">/var/www/html</option>
+                                                         <option value="dest-opt2">/home/mjns/mnt</option>
+                                                      </select>
+                                                      <span class="messages"></span>
+                                                   </div>
                                                 </div>
-                                            </div>
-                                            <!-- Morris chart end -->
-
-                                            <!-- List view card start -->
-					<div class="col-sm-12">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Target List:</h5>
-							<br class="hidden-br"/>
-                                                        <button class="btn btn-info btn-sm">Windows</button>
-                                                        <button class="btn btn-info btn-sm">Linux</button>
-                                                        <button class="btn btn-info btn-sm">Network</button>
-                                                        <button class="btn btn-info btn-sm">All</button>
-                                                    <div class="card-header-right">
-                                                        <i class="icofont icofont-refresh"></i>
-                                                    </div>
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2 col-form-label">Password</label>
+                                                   <div class="col-sm-10">
+                                                      <input type="password" class="form-control" id="password" name="password" placeholder="Password Input">
+                                                      <span class="messages"></span>
+                                                   </div>
                                                 </div>
-                                                <div class="row card-block">
-                                                    <div class="col-md-12">
-                                                        <ul class="list-view">
-                                                            <li>
-                                                                <div class="card user-card">
-                                                                    <div class="card-block">
-                                                                        <div class="media">
-                                                                                <img class="media-object img-circle card-list-img" src="assets/images/win-logo.png" alt="Server Name Here">
-										&nbsp;&nbsp;&nbsp;
-                                                                            <div class="media-body">
-                                                                                <div class="col-xs-12">
-                                                                                    <h6 class="d-inline-block">DC01</h6>
-											</br>
-                                                                                    <label class="label label-info">Windows Server</label>
-                                                                                </div>
-                                                                                    <div class="m-t-15">
-											<i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
-											<i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
-											<i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="">
-                                                                    <div class="card user-card">
-                                                                        <div class="card-block">
-                                                                            <div class="row">
-                                                                                <div class="media">
-                                                                                        <img class="media-object img-circle card-list-img" src="assets/images/lin-logo.png" alt="Generic placeholder image">
-										&nbsp;&nbsp;&nbsp;
-                                                                                </div>
-                                                                                <div class="media-body">
-                                                                                    <div class="col-xl-12">
-                                                                                        <div>
-                                                                                            <h6 class="d-inline-block">VM0</h6>
-      												</br>
-									                    <label class="label label-warning">Linux Server</label>
-										          </div>
-                                                                                            <div class="m-t-15">
-       												<i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
-												<i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
-												<i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="">
-                                                                        <div class="card user-card">
-                                                                            <div class="card-block">
-                                                                                <div class="media">
-                                                                                        <img class="media-object img-circle card-list-img" src="assets/images/net-logo.png" alt="Generic placeholder image">
-										&nbsp;&nbsp;&nbsp;
-                                                                                    <div class="media-body">
-                                                                                        <div>
-                                                                                            <h6 class="d-inline-block">SW0 </h6>
- 												</br>
-									                    <label class="label label-success">Network Device</label>
-                                                                                        </div>
-                                                                                            <div class="m-t-15">
-       												<i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
-												<i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
-												<i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2 col-form-label">Repeat Password</label>
+                                                   <div class="col-sm-10">
+                                                      <input type="password" class="form-control" id="repeat-password" name="repeat-password" placeholder="Repeat Password">
+                                                      <span class="messages"></span>
+                                                   </div>
+                                                </div>
+                                                <div class="row">
+                                                   <label class="col-sm-2 col-form-label">Status</label>
+                                                   <div class="col-sm-10">
+                                                      <div class="form-check form-check-inline">
+                                                         <label class="form-check-label">
+                                                         <input class="form-check-input" type="radio" name="gender" id="gender-1" value="option1"> Enable
+                                                         </label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                         <label class="form-check-label">
+                                                         <input class="form-check-input" type="radio" name="gender" id="gender-2" value="option2"> Disable
+                                                         </label>
+                                                      </div>
+                                                      <span class="messages"></span>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                   <label class="col-sm-2"></label>
+                                                   <div class="col-sm-10">
+                                                      <button type="submit" class="btn btn-primary m-b-0">Submit</button>
+                                                   </div>
+                                                </div>
+                                             </form>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- Basic Inputs Validation end -->
+                                    <!-- Morris chart start -->
+                                    <div class="col-md-12 col-xl-12">
+                                       <div class="card">
+                                          <div class="card-header success-border">
+                                             <h5>Historical Data:</h5>
+                                             <br class="hidden-br"/>
+                                             <button class="btn btn-info btn-sm" onclick="getMorrisRange(2040);">Week</button>
+                                             <button class="btn btn-info btn-sm" onclick="getMorrisRange(2050);">Month</button>
+                                             <button class="btn btn-info btn-sm" onclick="getMorrisRange(2060);">Year</button>
+                                             <button class="btn btn-info btn-sm" onclick="getMorrisRange();">All</button>
+                                             <div class="card-header-right">
+                                                <a href="#!" onclick="getMorrisRange();"><i class="icofont icofont-refresh"></i></a>
+                                             </div>
+                                          </div>
+                                          <div class="card-block">
+                                             <div id="morris-extra-area" style="height:470px;"></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- Morris chart end -->
+                                    <!-- List view card start -->
+                                    <div class="col-sm-12">
+                                       <div class="card">
+                                          <div class="card-header">
+                                             <h5>Target List:</h5>
+                                             <br class="hidden-br"/>
+                                             <button class="btn btn-info btn-sm">Windows</button>
+                                             <button class="btn btn-info btn-sm">Linux</button>
+                                             <button class="btn btn-info btn-sm">Network</button>
+                                             <button class="btn btn-info btn-sm">All</button>
+                                             <div class="card-header-right">
+                                                <i class="icofont icofont-refresh"></i>
+                                             </div>
+                                          </div>
+                                          <div class="row card-block">
+                                             <div class="col-md-12">
+                                                <ul class="list-view">
+                                                   <li>
+                                                      <div class="card user-card">
+                                                         <div class="card-block">
+                                                            <div class="media">
+                                                               <img class="media-object img-circle card-list-img" src="assets/images/win-logo.png" alt="Server Name Here">
+                                                               &nbsp;&nbsp;&nbsp;
+                                                               <div class="media-body">
+                                                                  <div class="col-xs-12">
+                                                                     <h6 class="d-inline-block">DC01</h6>
+                                                                     </br>
+                                                                     <label class="label label-info">Windows Server</label>
+                                                                  </div>
+                                                                  <div class="m-t-15">
+                                                                     <i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
+                                                                     <i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
+                                                                     <i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
+                                                                  </div>
+                                                               </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                        <!-- List view card end -->
+                                                         </div>
+                                                      </div>
+                                                   </li>
+                                                   <li class="">
+                                                      <div class="card user-card">
+                                                         <div class="card-block">
+                                                            <div class="row">
+                                                               <div class="media">
+                                                                  <img class="media-object img-circle card-list-img" src="assets/images/lin-logo.png" alt="Generic placeholder image">
+                                                                  &nbsp;&nbsp;&nbsp;
+                                                               </div>
+                                                               <div class="media-body">
+                                                                  <div class="col-xl-12">
+                                                                     <div>
+                                                                        <h6 class="d-inline-block">VM0</h6>
+                                                                        </br>
+                                                                        <label class="label label-warning">Linux Server</label>
+                                                                     </div>
+                                                                     <div class="m-t-15">
+                                                                        <i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
+                                                                        <i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
+                                                                        <i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </li>
+                                                   <li class="">
+                                                      <div class="card user-card">
+                                                         <div class="card-block">
+                                                            <div class="media">
+                                                               <img class="media-object img-circle card-list-img" src="assets/images/net-logo.png" alt="Generic placeholder image">
+                                                               &nbsp;&nbsp;&nbsp;
+                                                               <div class="media-body">
+                                                                  <div>
+                                                                     <h6 class="d-inline-block">SW0 </h6>
+                                                                     </br>
+                                                                     <label class="label label-success">Network Device</label>
+                                                                  </div>
+                                                                  <div class="m-t-15">
+                                                                     <i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
+                                                                     <i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
+                                                                     <i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- List view card end -->
+                                 </div>
                               </div>
                            </div>
                         </div>
-                    </div>
-
-				<div id="settings-modal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="login-card card-block login-card-modal">
-                                                <form class="md-float-material">
-                                                    <div class="auth-box">
-                                                        <div class="row m-b-20">
-                                                            <div class="col-md-12">
-                                                                <div class="text-center">
-                                                                    <img class="img-fluid-logo" src="assets/images/rBUI-logo.png" alt="rBUI Settings">
-                                                                </div>
-                                                                <h3 class="text-center txt-primary">Settings</h3>
-                                                            </div>
-                                                        </div>
-                                                        <hr>
-						       <div class="form-group">
-  						       		<label class="col-form-label">Current Start Time: <label id-"settings-time">1:30PM</label> <a href="#!" id="show-edit-time" onclick="showedittime()">Edit</a></label>
-                                                       </div>
-
-						       <div class="form-group" id="edit-time-div" style="display:none;"></div>
-
-						       <div class="form-group">
-                                                            <input type="email" class="form-control form-control-round" id="settings-email" name="settings-email" placeholder="Enter valid e-mail address">
-							    <span class="messages"></span>
-                                                        </div>
-
-                                                        <div class="row m-t-25 text-left">
-                                                            <div class="col-md-12">
-                                                                <div class="checkbox-fade fade-in-success">
-                                                                    <label>
-                                                                        <input type="checkbox" value="enable">
-                                                                        <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-success"></i></span>
-                                                                        <span class="text-inverse">Enable Backups</span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row m-t-15">
-                                                            <div class="col-md-6">
-                                                                <button type="submit" class="btn btn-outline-success btn-md btn-block waves-effect text-center btn-rounded-rbui">Save</button>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <button type="button" class="btn btn-outline-warning btn-md btn-block waves-effect text-center btn-rounded-rbui">Close</button>
-                                                            </div>
-                                                        </div>
-                                                        <hr>
-                                                    </div>
-                                                </form>
-                                                <!-- end of form -->
-                                            </div>
-                                        </div>
+                        <div id="settings-modal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="login-card card-block login-card-modal">
+                                 <form class="md-float-material">
+                                    <div class="auth-box">
+                                       <div class="row m-b-20">
+                                          <div class="col-md-12">
+                                             <div class="text-center">
+                                                <img class="img-fluid-logo" src="assets/images/rBUI-logo.png" alt="rBUI Settings">
+                                             </div>
+                                             <h3 class="text-center txt-primary">Settings</h3>
+                                          </div>
+                                       </div>
+                                       <hr>
+                                       <div class="form-group">
+                                          <label class="col-form-label">Current Start Time: <label id-"settings-time">1:30PM</label> <a href="#!" id="show-edit-time" onclick="showedittime()">Edit</a></label>
+                                       </div>
+                                       <div class="form-group" id="edit-time-div" style="display:none;"></div>
+                                       <div class="form-group">
+                                          <input type="email" class="form-control form-control-round" id="settings-email" name="settings-email" placeholder="Enter valid e-mail address">
+                                          <span class="messages"></span>
+                                       </div>
+                                       <div class="row m-t-25 text-left">
+                                          <div class="col-md-12">
+                                             <div class="checkbox-fade fade-in-success">
+                                                <label>
+                                                <input type="checkbox" value="enable">
+                                                <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-success"></i></span>
+                                                <span class="text-inverse">Enable Backups</span>
+                                                </label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row m-t-15">
+                                          <div class="col-md-6">
+                                             <button type="submit" class="btn btn-outline-success btn-md btn-block waves-effect text-center btn-rounded-rbui">Save</button>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <button type="button" class="btn btn-outline-warning btn-md btn-block waves-effect text-center btn-rounded-rbui">Close</button>
+                                          </div>
+                                       </div>
+                                       <hr>
                                     </div>
-                </div>
+                                 </form>
+                                 <!-- end of form -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</div>
-</div>
-
-
-
-<!-- Warning Section Starts -->
-<!-- Older IE warning message -->
-    <!--[if lt IE 9]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
-<!-- Warning Section Ends -->
-<!-- Required Jquery -->
-
-<script type="text/javascript" src="bower_components/jquery/js/jquery.min.js"></script>
-<script type="text/javascript" src="bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="bower_components/popper.js/js/popper.min.js"></script>
-<script type="text/javascript" src="bower_components/bootstrap/js/bootstrap.min.js"></script>
-<!-- jquery slimscroll js -->
-<script type="text/javascript" src="bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
-<!-- modernizr js -->
-<script type="text/javascript" src="bower_components/modernizr/js/modernizr.js"></script>
-<script type="text/javascript" src="bower_components/modernizr/js/css-scrollbars.js"></script>
-<!-- classie js -->
-<script type="text/javascript" src="bower_components/classie/js/classie.js"></script>
-<!-- Morris Chart js -->
-<script src="bower_components/raphael/js/raphael.min.js"></script>
-<script src="bower_components/morris.js/js/morris.js"></script>
-<!-- Todo js -->
-<script type="text/javascript" src="assets/pages/todo/todo.js"></script>
-<!-- i18next.min.js -->
-<script type="text/javascript" src="bower_components/i18next/js/i18next.min.js"></script>
-<script type="text/javascript" src="bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
-<script type="text/javascript" src="bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
-<script type="text/javascript" src="bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
-<!-- Custom js -->
-<script type="text/javascript" src="assets/js/script.js"></script>
-<script src="assets/js/demo-12.js"></script>
-<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="assets/js/jquery.mousewheel.min.js"></script>
-<script src="assets/js/pcoded.min.js"></script>
-<script src="assets/js/rBUI.js"></script>
-
-</body>
-
+         </div>
+      </div>
+      <!-- Warning Section Starts -->
+      <!-- Older IE warning message -->
+      <!--[if lt IE 9]>
+      <div class="ie-warning">
+         <h1>Warning!!</h1>
+         <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+         <div class="iew-container">
+            <ul class="iew-download">
+               <li>
+                  <a href="http://www.google.com/chrome/">
+                     <img src="assets/images/browser/chrome.png" alt="Chrome">
+                     <div>Chrome</div>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.mozilla.org/en-US/firefox/new/">
+                     <img src="assets/images/browser/firefox.png" alt="Firefox">
+                     <div>Firefox</div>
+                  </a>
+               </li>
+               <li>
+                  <a href="http://www.opera.com">
+                     <img src="assets/images/browser/opera.png" alt="Opera">
+                     <div>Opera</div>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.apple.com/safari/">
+                     <img src="assets/images/browser/safari.png" alt="Safari">
+                     <div>Safari</div>
+                  </a>
+               </li>
+               <li>
+                  <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                     <img src="assets/images/browser/ie.png" alt="">
+                     <div>IE (9 & above)</div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <p>Sorry for the inconvenience!</p>
+      </div>
+      <![endif]-->
+      <!-- Warning Section Ends -->
+      <!-- Required Jquery -->
+      <script type="text/javascript" src="bower_components/jquery/js/jquery.min.js"></script>
+      <script type="text/javascript" src="bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="bower_components/popper.js/js/popper.min.js"></script>
+      <script type="text/javascript" src="bower_components/bootstrap/js/bootstrap.min.js"></script>
+      <!-- jquery slimscroll js -->
+      <script type="text/javascript" src="bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+      <!-- modernizr js -->
+      <script type="text/javascript" src="bower_components/modernizr/js/modernizr.js"></script>
+      <script type="text/javascript" src="bower_components/modernizr/js/css-scrollbars.js"></script>
+      <!-- classie js -->
+      <script type="text/javascript" src="bower_components/classie/js/classie.js"></script>
+      <!-- Morris Chart js -->
+      <script src="bower_components/raphael/js/raphael.min.js"></script>
+      <script src="bower_components/morris.js/js/morris.js"></script>
+      <!-- Todo js -->
+      <script type="text/javascript" src="assets/pages/todo/todo.js"></script>
+      <!-- i18next.min.js -->
+      <script type="text/javascript" src="bower_components/i18next/js/i18next.min.js"></script>
+      <script type="text/javascript" src="bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+      <script type="text/javascript" src="bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+      <script type="text/javascript" src="bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+      <!-- Custom js -->
+      <script type="text/javascript" src="assets/js/script.js"></script>
+      <script src="assets/js/demo-12.js"></script>
+      <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="assets/js/jquery.mousewheel.min.js"></script>
+      <script src="assets/js/pcoded.min.js"></script>
+      <script src="assets/js/rBUI.js"></script>
+   </body>
 </html>
