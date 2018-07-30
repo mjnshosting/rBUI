@@ -132,6 +132,38 @@ function getMorrisRange(histChoice) {
 }
 //End Graphing Section
 
+//back to main chatbar
+    $('.back_logList').on('click', function() {
+        var my_val = $('.pcoded').attr('vertical-placement');
+        if (my_val == 'right') {
+            var options = {
+                direction: 'left'
+            };
+        } else {
+            var options = {
+                direction: 'right'
+            };
+        }
+        $('.showChat_inner').toggle('slide', options, 500);
+        $('.showChat').css('display', 'block');
+    });
+// /*chatbar js end*/
+
+if ($(window).width() < 992) {
+    $(".mobile-options-hide").on('click', function() {
+        $(".nav-right").slideToggle('slow');
+    });
+}
+    /*chat box scroll*/
+    var a = $(window).height() - 50;
+    $(".main-friend-list").slimScroll({
+        height: a,
+        allowPageScroll: false,
+        wheelStep: 5,
+        color: 'transparent'
+    });
+
+
 $(document).ready(function(){
 
 });
