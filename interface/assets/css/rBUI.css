@@ -171,3 +171,38 @@
 .card-block-log-list {
     padding: 10px;
 }
+
+/*
+.mobile-options-hide {
+  -webkit-transition: height .3s ease;
+  height: 0;
+  overflow: hidden;
+  width: 200px;
+  background: red;
+  margin-top: 10px;
+}
+
+input:checked + .test {
+  height: 100px;
+}
+
+*/
+
+/*
+if ($(window).width() < 992) {
+    $(".mobile-options-hide").on('click', function() {
+        $(".nav-right").slideToggle('slow');
+    });
+}
+*/
+
+/* 
+.main-friend-list {
+/*").slimScroll({ */
+   height: auto;
+   allowPageScroll: false;
+   wheelStep: 10;
+   touchScrollStep : 100;
+   color: transparent;
+}
+*/

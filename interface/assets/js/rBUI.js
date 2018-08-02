@@ -124,7 +124,7 @@ function getMorrisRange(histChoice) {
             url: 'pANxv/create-historical-graph.php',
             type: "POST",
             dataType: "json",
-            data: {range : histChoice },
+            data: { range : histChoice },
             success: function (data) {
 	            setMorris(data);
             }
@@ -161,10 +161,23 @@ if ($(window).width() < 992) {
 //        height: "80%",
         allowPageScroll: false,
         wheelStep: 10,
+	touchScrollStep : 100,
         color: 'transparent'
     });
 
+function showtargetlist (devicetype) {
+	$.ajax({
+            url: 'pANxv/show-target-list.php',
+            type: "POST",
+            data: { type : devicetype },
+//	    encode: true,
+            success: function (data) {
+		$('#listtargets').html(data);
+            }
+	});
+}
+
 
 $(document).ready(function(){
-
+	$('#listtargets').load('pANxv/show-target-list.php');
 });

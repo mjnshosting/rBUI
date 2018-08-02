@@ -35,6 +35,7 @@
    <body>
       <div id="pcoded" class="pcoded">
          <div class="pcoded-overlay-box"></div>
+         <div class="log-list-overlay-box"></div>
          <div class="pcoded-container navbar-wrapper">
             <nav class="navbar header-navbar pcoded-header" >
                <div class="navbar-wrapper">
@@ -48,54 +49,7 @@
                      </a>
                   </div>
                   <div class="navbar-container container-fluid">
-                     <div>
                         <ul class="nav-right">
-                           <li class="header-notification">
-                              <a href="#!">
-                                 <img class="img-dest-buttons" src="assets/images/notification.png" alt="Notification">
-                                 <span class="badge">
-                                    <div id="notification-count">5</div>
-                                 </span>
-                              </a>
-                              <ul class="show-notification">
-                                 <li>
-                                    <h6>Notifications</h6>
-                                    <label class="label label-danger">New</label>
-                                 </li>
-                                 <!-- Start Notifications -->
-                                 <li>
-                                    <div class="media">
-                                       <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
-                                       <div class="media-body">
-                                          <h5 class="notification-user">John Doe</h5>
-                                          <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                          <span class="notification-time">30 minutes ago</span>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li>
-                                    <div class="media">
-                                       <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
-                                       <div class="media-body">
-                                          <h5 class="notification-user">Joseph William</h5>
-                                          <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                          <span class="notification-time">30 minutes ago</span>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li>
-                                    <div class="media">
-                                       <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
-                                       <div class="media-body">
-                                          <h5 class="notification-user">Sara Soudein</h5>
-                                          <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                          <span class="notification-time">30 minutes ago</span>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <!-- End Notifications -->
-                              </ul>
-                           </li>
                            <li class="header-notification">
                               <a href="#!" class="displayChatbox mobile-options-hide">
                                  <img class="img-dest-buttons" src="assets/images/alert.png" alt="Warning">
@@ -106,7 +60,6 @@
                            </li>
                         </ul>
                      </div>
-                  </div>
                </div>
             </nav>
             <!-- Sidebar chat start -->
@@ -227,6 +180,11 @@
                                  <label class="label label-success">07/29/18</label>
                               </div>
                            </div>
+			   <div align="center">
+				<a href="#!" data-toggle="modal" data-target="#log-list-modal">
+				<img class="img-dest-buttons" src="assets/images/list.png">
+				</a>	
+			   </div>
                            <!-- End Notification List -->
                            </br>
                            </br>
@@ -589,87 +547,18 @@
                                           <div class="card-header">
                                              <h5>Target List:</h5>
                                              <br class="hidden-br"/>
-                                             <button class="btn btn-info btn-sm">Windows</button>
-                                             <button class="btn btn-info btn-sm">Linux</button>
-                                             <button class="btn btn-info btn-sm">Network</button>
-                                             <button class="btn btn-info btn-sm">All</button>
+                                             <button class="btn btn-info btn-sm" onclick="showtargetlist(0);">Windows</button>
+                                             <button class="btn btn-info btn-sm" onclick="showtargetlist(1);">Linux</button>
+                                             <button class="btn btn-info btn-sm" onclick="showtargetlist(2);">Network</button>
+                                             <button class="btn btn-info btn-sm" onclick="showtargetlist(3);">All</button>
                                              <div class="card-header-right">
-                                                <i class="icofont icofont-refresh"></i>
+                                                <a href="#!" onclick="showtargetlist(3);"><i class="icofont icofont-refresh"></i></a>
                                              </div>
                                           </div>
                                           <div class="row card-block">
                                              <div class="col-md-12">
                                                 <ul class="list-view">
-                                                   <li>
-                                                      <div class="card user-card">
-                                                         <div class="card-block">
-                                                            <div class="media">
-                                                               <img class="media-object img-circle card-list-img" src="assets/images/win-logo.png" alt="Server Name Here">
-                                                               &nbsp;&nbsp;&nbsp;
-                                                               <div class="media-body">
-                                                                  <div class="col-xs-12">
-                                                                     <h6 class="d-inline-block">DC01</h6>
-                                                                     </br>
-                                                                     <label class="label label-info">Windows Server</label>
-                                                                  </div>
-                                                                  <div class="m-t-15">
-                                                                     <i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
-                                                                     <i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
-                                                                     <i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="">
-                                                      <div class="card user-card">
-                                                         <div class="card-block">
-                                                            <div class="row">
-                                                               <div class="media">
-                                                                  <img class="media-object img-circle card-list-img" src="assets/images/lin-logo.png" alt="Generic placeholder image">
-                                                                  &nbsp;&nbsp;&nbsp;
-                                                               </div>
-                                                               <div class="media-body">
-                                                                  <div class="col-xl-12">
-                                                                     <div>
-                                                                        <h6 class="d-inline-block">VM0</h6>
-                                                                        </br>
-                                                                        <label class="label label-warning">Linux Server</label>
-                                                                     </div>
-                                                                     <div class="m-t-15">
-                                                                        <i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
-                                                                        <i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
-                                                                        <i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
-                                                                     </div>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </li>
-                                                   <li class="">
-                                                      <div class="card user-card">
-                                                         <div class="card-block">
-                                                            <div class="media">
-                                                               <img class="media-object img-circle card-list-img" src="assets/images/net-logo.png" alt="Generic placeholder image">
-                                                               &nbsp;&nbsp;&nbsp;
-                                                               <div class="media-body">
-                                                                  <div>
-                                                                     <h6 class="d-inline-block">SW0 </h6>
-                                                                     </br>
-                                                                     <label class="label label-success">Network Device</label>
-                                                                  </div>
-                                                                  <div class="m-t-15">
-                                                                     <i class="icofont icofont-file-alt text-files"></i> Total File Count: 15,000</br>
-                                                                     <i class="icofont icofont-pie-chart text-usage"></i> Total Storage Used: 5,000</br>
-                                                                     <i class="icofont icofont-clock-time text-duration"></i> Last Backup Duration: 123</br>
-                                                                  </div>
-                                                               </div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </li>
+							<div id="listtargets"></div>
                                                 </ul>
                                              </div>
                                           </div>
@@ -724,6 +613,24 @@
                                        <hr>
                                     </div>
                                  </form>
+                                 <!-- end of form -->
+                              </div>
+                           </div>
+                        </div>
+
+                        <div id="log-list-modal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="login-card card-block login-card-modal">
+                                    <div class="auth-box">
+                                       <div class="row m-b-20">
+                                          <div class="col-md-12">
+                                             <div class="text-center">
+                                                <img class="img-fluid-logo" src="assets/images/rBUI-logo.png" alt="rBUI Settings">
+                                             </div>
+                                             <h3 class="text-center txt-primary">All Logs</h3>
+                                          </div>
+                                       </div>
+                                    </div>
                                  <!-- end of form -->
                               </div>
                            </div>
