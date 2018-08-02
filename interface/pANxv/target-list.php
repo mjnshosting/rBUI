@@ -2,9 +2,9 @@
 $type = $_POST['type'];
 
 function getDeviceList ($type) {
-switch ($type) {
-	case 0:
+	if ($type == "windows") {
 		echo "<li>";
+                echo "<div class='destination-list'>";
 		echo "<div class='card user-card'>";
 		echo "<div class='card-block'>";
 		echo "<div class='media'>";
@@ -19,16 +19,23 @@ switch ($type) {
 		echo "<div class='m-t-15'>";
 		echo "<i class='icofont icofont-file-alt text-files'></i> Total File Count: " . rand(0,100000) . "<br>";
 		echo "<i class='icofont icofont-pie-chart text-usage'></i> Total Storage Used: " . rand(0,100000) . "<br>";
-		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000) . "<br>";
+		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000);
+                echo "<div class='f-right'>";
+                echo "<a href='#!' class='edit_destination'><img class='img-dest-buttons' src='assets/images/edit.svg'></img></a>";
+                echo "&nbsp;&nbsp;&nbsp;";
+                echo "<a href='#!' class='delete_destination'><img class='img-dest-buttons' src='assets/images/recycle.svg'></img></a>";
+                echo "</div>";
 		echo "</div>";
+                echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</li>";
-		break;
-	case 1:
+	}
+	if ($type == "linux") {
 		echo "<li>";
+                echo "<div class='destination-list'>";
 		echo "<div class='card user-card'>";
 		echo "<div class='card-block'>";
 		echo "<div class='media'>";
@@ -43,16 +50,23 @@ switch ($type) {
 		echo "<div class='m-t-15'>";
 		echo "<i class='icofont icofont-file-alt text-files'></i> Total File Count: " . rand(0,100000) . "<br>";
 		echo "<i class='icofont icofont-pie-chart text-usage'></i> Total Storage Used: " . rand(0,100000) . "<br>";
-		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000) . "<br>";
+		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000);
+                echo "<div class='f-right'>";
+                echo "<a href='#!' class='edit_destination'><img class='img-dest-buttons' src='assets/images/edit.svg'></img></a>";
+                echo "&nbsp;&nbsp;&nbsp;";
+                echo "<a href='#!' class='delete_destination'><img class='img-dest-buttons' src='assets/images/recycle.svg'></img></a>";
+                echo "</div>";
+		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</li>";
-		break;
-	case 2:
+	}
+	if ($type == "network") {
 		echo "<li>";
+                echo "<div class='destination-list'>";
 		echo "<div class='card user-card'>";
 		echo "<div class='card-block'>";
 		echo "<div class='media'>";
@@ -67,16 +81,23 @@ switch ($type) {
 		echo "<div class='m-t-15'>";
 		echo "<i class='icofont icofont-file-alt text-files'></i> Total File Count: " . rand(0,100000) . "<br>";
 		echo "<i class='icofont icofont-pie-chart text-usage'></i> Total Storage Used: " . rand(0,100000) . "<br>";
-		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000) . "<br>";
+		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000);
+                echo "<div class='f-right'>";
+                echo "<a href='#!' class='edit_destination'><img class='img-dest-buttons' src='assets/images/edit.svg'></img></a>";
+                echo "&nbsp;&nbsp;&nbsp;";
+                echo "<a href='#!' class='delete_destination'><img class='img-dest-buttons' src='assets/images/recycle.svg'></img></a>";
+                echo "</div>";
+		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</li>";
-		break;
-	case 3:
+	}
+	if ($type == "all") {
 		echo "<li>";
+                echo "<div class='destination-list'>";
 		echo "<div class='card user-card'>";
 		echo "<div class='card-block'>";
 		echo "<div class='media'>";
@@ -91,7 +112,13 @@ switch ($type) {
 		echo "<div class='m-t-15'>";
 		echo "<i class='icofont icofont-file-alt text-files'></i> Total File Count: " . rand(0,100000) . "<br>";
 		echo "<i class='icofont icofont-pie-chart text-usage'></i> Total Storage Used: " . rand(0,100000) . "<br>";
-		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000) . "<br>";
+		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000);
+                echo "<div class='f-right'>";
+                echo "<a href='#!' class='edit_destination'><img class='img-dest-buttons' src='assets/images/edit.svg'></img></a>";
+                echo "&nbsp;&nbsp;&nbsp;";
+                echo "<a href='#!' class='delete_destination'><img class='img-dest-buttons' src='assets/images/recycle.svg'></img></a>";
+                echo "</div>";
+		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
@@ -99,6 +126,7 @@ switch ($type) {
 		echo "</div>";
 		echo "</li>";
 		echo "<li>";
+                echo "<div class='destination-list'>";
 		echo "<div class='card user-card'>";
 		echo "<div class='card-block'>";
 		echo "<div class='media'>";
@@ -113,7 +141,13 @@ switch ($type) {
 		echo "<div class='m-t-15'>";
 		echo "<i class='icofont icofont-file-alt text-files'></i> Total File Count: " . rand(0,100000) . "<br>";
 		echo "<i class='icofont icofont-pie-chart text-usage'></i> Total Storage Used: " . rand(0,100000) . "<br>";
-		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000) . "<br>";
+		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000);
+                echo "<div class='f-right'>";
+                echo "<a href='#!' class='edit_destination'><img class='img-dest-buttons' src='assets/images/edit.svg'></img></a>";
+                echo "&nbsp;&nbsp;&nbsp;";
+                echo "<a href='#!' class='delete_destination'><img class='img-dest-buttons' src='assets/images/recycle.svg'></img></a>";
+		echo "</div>";
+                echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
@@ -121,6 +155,7 @@ switch ($type) {
 		echo "</div>";
 		echo "</li>";
 		echo "<li>";
+                echo "<div class='destination-list'>";
 		echo "<div class='card user-card'>";
 		echo "<div class='card-block'>";
 		echo "<div class='media'>";
@@ -135,7 +170,13 @@ switch ($type) {
 		echo "<div class='m-t-15'>";
 		echo "<i class='icofont icofont-file-alt text-files'></i> Total File Count: " . rand(0,100000) . "<br>";
 		echo "<i class='icofont icofont-pie-chart text-usage'></i> Total Storage Used: " . rand(0,100000) . "<br>";
-		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000) . "<br>";
+		echo "<i class='icofont icofont-clock-time text-duration'></i> Last Backup Duration: " . rand(0,100000);
+                echo "<div class='f-right'>";
+                echo "<a href='#!' class='edit_destination'><img class='img-dest-buttons' src='assets/images/edit.svg'></img></a>";
+                echo "&nbsp;&nbsp;&nbsp;";
+                echo "<a href='#!' class='delete_destination'><img class='img-dest-buttons' src='assets/images/recycle.svg'></img></a>";
+                echo "</div>";
+                echo "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
@@ -145,10 +186,14 @@ switch ($type) {
 	}
 }
 
+//When button is clicked on target list
 if (isset($type)) {
         getDeviceList($type);
-} else {
-        getDeviceList(3);
+} 
+
+// When page first loads
+if (is_null($type)) {
+        getDeviceList(all);
 }
 
 

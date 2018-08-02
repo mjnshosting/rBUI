@@ -167,7 +167,7 @@ if ($(window).width() < 992) {
 
 function showtargetlist (devicetype) {
 	$.ajax({
-            url: 'pANxv/show-target-list.php',
+            url: 'pANxv/target-list.php',
             type: "POST",
             data: { type : devicetype },
 //	    encode: true,
@@ -178,6 +178,19 @@ function showtargetlist (devicetype) {
 }
 
 
+function showtargetlog (logidvalue) {
+	$.ajax({
+            url: 'pANxv/log-contents.php',
+            type: "POST",
+            data: { logid : logidvalue },
+//	    encode: true,
+            success: function (data) {
+		$('#logcontents').html(data);
+            }
+	});
+}
+
+
 $(document).ready(function(){
-	$('#listtargets').load('pANxv/show-target-list.php');
+	$('#listtargets').load('pANxv/target-list.php');
 });
